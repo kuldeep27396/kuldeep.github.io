@@ -1,2 +1,1 @@
-# kuldeep.github.io
-# kuldeep-pal.online
+# https://kuldeep-pal.site/
