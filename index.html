@@ -11,7 +11,7 @@
   <!-- Mobile Specific Metas
   ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Kuldeep Pal Portfolio">
+  <meta name="description" content="Creative Portfolio Template">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Kross Template v1.0">
@@ -67,267 +67,598 @@
 </header>
 
 <!-- hero area -->
-<section class="hero-area bg-primary" id="parallax">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary">Hi! I’m <br> Kuldeep Pal. <br>Data Engineer </h1>
+<!-- hero area -->
+<section class="hero-area bg-primary position-relative overflow-hidden">
+  <!-- Dynamic Background Elements -->
+  <div class="animated-background">
+    <div class="floating-shape dot-group-1"></div>
+    <div class="floating-shape leaf-1"></div>
+    <div class="floating-shape dot-group-2"></div>
+    <div class="floating-shape leaf-2"></div>
+    <div class="floating-shape leaf-3"></div>
+    <div class="floating-shape dot-group-3"></div>
+  </div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mx-auto text-center py-5">
+        <h1 class="text-white font-tertiary mb-2">Hi! I'm Kuldeep Pal</h1>
+        <h2 class="text-white font-secondary h3 mb-4">I'm a Data Engineer</h2>
+        
+        <!-- Compact Expertise Pills -->
+        <div class="expertise-cloud">
+          <div class="expertise-pill"><i class="ti-server"></i>Data Platform</div>
+          <div class="expertise-pill"><i class="ti-cloud"></i>Backend</div>
+          <div class="expertise-pill"><i class="ti-rocket"></i>CI/CD</div>
+          <div class="expertise-pill"><i class="ti-thought"></i>GenAI</div>
+          <div class="expertise-pill"><i class="ti-stats-up"></i>ML</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="layer-bg w-100">
-    <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+
+  <!-- Compact social icons -->
+  <div class="social-strip">
+    <a href="https://www.linkedin.com/in/kuldeep27396" class="social-icon"><i class="ti-linkedin"></i></a>
+    <a href="https://github.com/kuldeep27396" class="social-icon"><i class="ti-github"></i></a>
+    <a href="https://twitter.com/kuldeep27396" class="social-icon"><i class="ti-twitter"></i></a>
   </div>
-  <div class="layer" id="l2">
-    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l3">
-    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l4">
-    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l5">
-    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l6">
-    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l7">
-    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l8">
-    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l9">
-    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
-  </div>
-  <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li class="mb-3"><a class="text-white" href="https://www.facebook.com/kuldeep27396"><i class="ti-facebook"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://github.com/kuldeep27396"><i class="ti-github"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://www.linkedin.com/in/kuldeep27396"><i class="ti-linkedin"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://twitter.com/kuldeep27396"><i class="ti-twitter"></i></a></li>
-  </ul>
-  <!-- /social icon -->
+
+  <style>
+    .hero-area {
+      min-height: 40vh;
+      background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+    }
+
+    .animated-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .floating-shape {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0.15;
+    }
+
+    .dot-group-1 {
+      background: url('images/illustrations/dots-group-orange.png') no-repeat;
+      width: 100px;
+      height: 100px;
+      top: 10%;
+      left: 5%;
+      animation: float 8s infinite;
+    }
+
+    .dot-group-2 {
+      background: url('images/illustrations/dots-group-cyan.png') no-repeat;
+      width: 80px;
+      height: 80px;
+      bottom: 10%;
+      right: 5%;
+      animation: float 9s infinite;
+    }
+
+    .dot-group-3 {
+      background: url('images/illustrations/dots-orange.png') no-repeat;
+      width: 60px;
+      height: 60px;
+      top: 30%;
+      right: 15%;
+      animation: float 7s infinite;
+    }
+
+    .leaf-1 {
+      background: url('images/illustrations/leaf-cyan.png') no-repeat;
+      width: 100px;
+      height: 100px;
+      top: 20%;
+      right: 20%;
+      animation: floatRotate 12s infinite;
+    }
+
+    .leaf-2 {
+      background: url('images/illustrations/leaf-orange.png') no-repeat;
+      width: 70px;
+      height: 70px;
+      bottom: 20%;
+      left: 20%;
+      animation: floatRotate 10s infinite reverse;
+    }
+
+    .leaf-3 {
+      background: url('images/illustrations/leaf-yellow.png') no-repeat;
+      width: 60px;
+      height: 60px;
+      top: 50%;
+      left: 10%;
+      animation: floatRotate 11s infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) translateX(0);
+      }
+      25% {
+        transform: translateY(-10px) translateX(5px);
+      }
+      50% {
+        transform: translateY(0) translateX(10px);
+      }
+      75% {
+        transform: translateY(10px) translateX(5px);
+      }
+    }
+
+    @keyframes floatRotate {
+      0%, 100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-15px) translateX(10px) rotate(5deg);
+      }
+      50% {
+        transform: translateY(0) translateX(20px) rotate(0deg);
+      }
+      75% {
+        transform: translateY(15px) translateX(10px) rotate(-5deg);
+      }
+    }
+
+    .expertise-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .expertise-pill {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      padding: 5px 12px;
+      border-radius: 20px;
+      color: white;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .expertise-pill:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .social-strip {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 2;
+    }
+
+    .social-icon {
+      color: white;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: translateX(-2px);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 768px) {
+      .hero-area {
+        min-height: 35vh;
+      }
+      .expertise-pill {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+      }
+      .social-strip {
+        right: 15px;
+      }
+      .floating-shape {
+        transform: scale(0.7);
+      }
+    }
+  </style>
 </section>
+<!-- /hero area -->
 <!-- /hero area -->
 
 <!-- about -->
+<!-- about -->
 <div id="about">
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">Hello, I'm Kuldeep Pal.
-
-          I have 3+ years of working experience working with Big Data Analytics and the Cloud. Worked with different domains like Capital Markets, Insurance, FinTech, Pharmaceutical/Healthcare. Have designed scalable & optimized data pipelines for mostly Batch Processing Utilizing Cloud.
-          <br>
-          <br>
-          ✔️ Building data warehouses /Data lakes using modern cloud platforms and technologies.<br>
-          ✔️ Implementing and automating data pipelines, ETL processes.<br>
-          ✔️ Data Cleaning, Processing, and Standardization (Machine Learning and NLP).<br>
-          ✔️ Data Migration (Heterogenous and Homogenous)<br>
-          <br>
-          I love to adapt to new technologies to solve different business problems. I want to work with Petabytes of real-time/Streaming/Batch data and build good platforms.<br></p>
-        <a href="https://www.linkedin.com/in/kuldeep27396/" class="btn btn-transparent">Linkedin</a>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <p class="font-secondary paragraph-lg">
+            <span class="text-primary font-weight-bold">👋 Hello! I'm Kuldeep Pal</span>
+            <br><br>
+            <span class="text-dark">A passionate <span class="text-primary">Data Engineer</span> with <span class="text-success">7+ years</span> of experience in Big Data Analytics and Cloud Technologies. 🚀</span>
+            <br><br>
+            
+            <span class="text-muted">💼 Throughout my journey, I've worked across diverse domains:</span><br>
+            <span class="badge badge-primary m-1">Capital Markets</span>
+            <span class="badge badge-info m-1">Insurance</span>
+            <span class="badge badge-success m-1">FinTech</span>
+            <span class="badge badge-warning m-1">Pharmaceutical</span>
+            <span class="badge badge-danger m-1">Healthcare</span>
+            <span class="badge badge-secondary m-1">Retail/E-commerce</span>
+            
+            <br><br>
+            <span class="text-dark">🎯 Core Expertise:</span><br>
+            <div class="text-left ml-4">
+              <p>✨ Building scalable data warehouses & data lakes using modern cloud platforms</p>
+              <p>✨ Implementing and automating data pipelines with real-time processing</p>
+              <p>✨ Data processing & standardization using ML and NLP</p>
+              <p>✨ Data Migration across heterogeneous systems</p>
+            </div>
+            
+            <br>
+            <span class="text-dark">🛠️ Technical Focus:</span><br>
+            <div class="text-left ml-4">
+              <p>📊 Data Engineering <span class="text-success">(80%)</span></p>
+              <p>💻 Backend Development <span class="text-info">(10%)</span></p>
+              <p>🔄 DevOps <span class="text-warning">(5%)</span></p>
+              <p>🤖 GenAI <span class="text-danger">(5%)</span></p>
+            </div>
+            
+            <br>
+            <span class="text-muted">I'm passionate about solving complex data challenges and building robust, scalable solutions. Currently working at <span class="text-primary">Walmart Global Tech</span> where I focus on fraud detection and healthcare data platforms. 🌟</span>
+            
+            <br><br>
+            <div class="mt-4">
+              <a href="https://www.linkedin.com/in/kuldeep27396/" class="btn btn-primary m-2">
+                <i class="ti-linkedin mr-2"></i>LinkedIn
+              </a>
+              <a href="https://github.com/kuldeep27396" class="btn btn-dark m-2">
+                <i class="ti-github mr-2"></i>GitHub
+              </a>
+            </div>
+          </p>
+        </div>
       </div>
     </div>
+  </section>
   </div>
-</section>
-</div>
+  <!-- /about -->
 <!-- /about -->
 
 <!-- skills -->
+<!-- skills -->
 <div id="skills">
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">Skills</h2>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-            <div class="wave" data-progress="80%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Big Data, Hadoop, Hive</h4>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Skills</h2>
+        </div>
+        
+        <!-- Programming -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+              <div class="wave" data-progress="90%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Programming</h4>
+              <p class="text-muted small">Python, PySpark, SQL, Scala, Java(Spring-Boot)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-            <div class="wave" data-progress="60%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Cloud(AWS)</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-            <div class="wave" data-progress="50%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Big Data-Analytics</h4>
+  
+        <!-- Big Data -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+              <div class="wave" data-progress="85%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Big Data</h4>
+              <p class="text-muted small">Spark, Hadoop, Hive, ETL, Pandas, Numpy, CRUD API, Kafka, Airflow</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-            <div class="wave" data-progress="20%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Data Science</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-            <div class="wave" data-progress="80%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">SQL, MySql, SparkSQL</h4>
+  
+        <!-- Cloud -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+              <div class="wave" data-progress="80%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Cloud</h4>
+              <p class="text-muted small">AWS-S3, EMR, Athena, Redshift, GCP-BigQuery, BigTable, DataProc, Vertex AI</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-            <div class="wave" data-progress="70%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Airflow</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-            <div class="wave" data-progress="80%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">ETL</h4>
+  
+        <!-- Databases -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+              <div class="wave" data-progress="75%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Databases</h4>
+              <p class="text-muted small">BigQuery, ElasticSearch, Azure SQL Server, MySQL, MongoDB</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-            <div class="wave" data-progress="70%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Apache PySpark, Pandas</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-            <div class="wave" data-progress="30%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Flask & Rest API's</h4>
+  
+        <!-- Tools/CICD -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+              <div class="wave" data-progress="70%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Tools/CICD</h4>
+              <p class="text-muted small">Jupyter, DataBricks, Tableau, Git, Jenkins, Docker, Kubernetes, GenAI (LLM, GPT)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-            <div class="wave" data-progress="10%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Tableau</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-            <div class="wave" data-progress="50%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Data Modelling, Data-warehousing</h4>
+  
+        <!-- Data Engineering -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+              <div class="wave" data-progress="85%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Data Engineering</h4>
+              <p class="text-muted small">ETL, Data Modeling, Data Warehousing, Data Lakes, Real-time Processing</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-            <div class="wave" data-progress="30%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Data Structures & Algorithms</h4>
+  
+        <!-- Streaming -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+              <div class="wave" data-progress="75%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Streaming</h4>
+              <p class="text-muted small">Kafka, Spark Structured Streaming, Real-time Analytics</p>
+            </div>
           </div>
         </div>
+  
+        <!-- Soft Skills -->
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+              <div class="wave" data-progress="80%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Soft Skills</h4>
+              <p class="text-muted small">Collaboration, Teamwork, Problem-Solving, Stakeholder Management</p>
+            </div>
+          </div>
+        </div>
+  
       </div>
     </div>
+  </section>
   </div>
-</section>
-</div>
+  <!-- /skills -->
 <!-- /skills -->
 
 <!-- experience -->
+<!-- experience -->
+<!-- experience -->
 <div id="exp">
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">Experience</h2>
-      </div>
-      <div class="col-lg-3 col-md-4 text-center">
-        <img src="images/experience/tcs.png" alt="icon">
-        <p class="mb-0">September 2018 - September 2021</p>
-        <h4>Data Engineer</h4>
-        <h6 class="text-light">TATA CONSULTANCY SERVICES</h6>
-      </div>
-      <div class="col-lg-3 col-md-4 text-center">
-        <img src="images/experience/zs.png" alt="icon">
-        <p class="mb-0">September 2021 - June 2022</p>
-        <h4>Data Engineer</h4>
-        <h6 class="text-light">ZS ASSOCIATES</h6>
-      </div>
-      <div class="col-lg-3 col-md-4 text-center">
-        <img src="images/experience/walmart.png" alt="icon">
-        <p class="mb-0">June 2022 - Present</p>
-        <h4>Data Engineer - 𝐼𝐼𝐼</h4>
-        <h6 class="text-light">Walmart Global Tech.</h6>
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/walmart.png" alt="icon">
+          <p class="mb-0">June 2022 - Present</p>
+          <h4>Data Engineer - 𝐼𝐼𝐼</h4>
+          <h6 class="text-light">Walmart Global Tech.</h6>
+          <p class="text-muted">
+            Led development of real-time fraud detection pipelines using Spark Structured Streaming and Kafka, resulting in $4M recovered from gift card fraud and $544K savings in insurance fraud investigations.
+            <br><br>
+            Built multiple critical data platforms including healthcare monitoring, SEC compliance notifications, and implemented GenAI solutions while maintaining strong focus on data security and cost optimization.
+          </p>
+          <div class="skills-section mt-3">
+            <h6 class="text-primary">Key Skills:</h6>
+            <p class="text-muted small">
+              PySpark • Kafka • BigQuery • Elasticsearch • Airflow • Spring Boot • GenAI • Java • Scala • Docker • Kubernetes
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/zs.png" alt="icon">
+          <p class="mb-0">September 2021 - June 2022</p>
+          <h4>Data Engineer</h4>
+          <h6 class="text-light">ZS ASSOCIATES</h6>
+          <p class="text-muted">
+            Made key contributions to ZAIDYN™ SaaS product development, building unified data analytics solution for clinical trial feasibility analysis.
+            <br><br>
+            Optimized AWS EMR data processing reducing pipeline runtime from 6 to 3.5 hours while implementing entity resolution for high-quality data matching.
+          </p>
+          <div class="skills-section mt-3">
+            <h6 class="text-primary">Key Skills:</h6>
+            <p class="text-muted small">
+              AWS EMR • Hive • PySpark • SQL • Airflow • Data Modeling • AWS S3 • Entity Resolution • Data Warehousing
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/tcs.png" alt="icon">
+          <p class="mb-0">September 2018 - September 2021</p>
+          <h4>Data Engineer</h4>
+          <h6 class="text-light">TATA CONSULTANCY SERVICES</h6>
+          <p class="text-muted">
+            Clients: Morgan Stanley, Nassau RE
+            <br><br>
+            Developed AWS-based data pipelines for reinsurance data migration and warehousing, reducing manual alert workload by 50% through automation.
+            <br><br>
+            Built ETL jobs for sales & trading reporting and implemented OCR solutions for document digitization.
+          </p>
+          <div class="skills-section mt-3">
+            <h6 class="text-primary">Key Skills:</h6>
+            <p class="text-muted small">
+              AWS Glue • Python • Redshift • Lambda • Athena • Shell Scripts • Tableau • Computer Vision • ETL • SQL
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
   </div>
-</section>
-</div>
+  <!-- ./experience -->
+  <!-- ./experience -->
 <!-- ./experience -->
 
+<!-- education -->
 <!-- education -->
 <section class="section position-relative">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
+      <div class="col-lg-12 text-center mb-5">
         <h2 class="section-title">Education</h2>
       </div>
-      <div class="col-lg-15 col-md-6 mb-80">
-        <div class="d-flex">
-          <div class="mr-lg-5 mr-3">
-            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
-          </div>
-          <div>
-            <p class="text-dark mb-1">2018</p>
-            <h4>Bachelour of Engineering | Computer Science</h4>
-            <p class="mb-0 text-light">Rajiv Gandhi Prodyogiki Vishwavidyalaya</p>
+      
+      <div class="col-lg-12">
+        <div class="card shadow-lg border-0 rounded-lg">
+          <div class="card-body p-5">
+            <div class="row align-items-center">
+              <!-- Education Icon -->
+              <div class="col-md-3 text-center">
+                <div class="education-logo-container mb-4">
+                  <div class="scholar-hat-icon">
+                    <i class="ti-crown" style="font-size: 80px; color: #007bff; background: -webkit-linear-gradient(45deg, #007bff, #00ff88);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));"></i>
+                    <div class="graduation-cap mt-2">
+                      <i class="ti-medall" style="font-size: 40px; color: #6c757d;"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Education Details -->
+              <div class="col-md-9">
+                <div class="education-content">
+                  <h3 class="text-primary mb-3">Bachelor of Engineering (Honours)</h3>
+                  <h4 class="text-dark mb-3">Computer Science Engineering</h4>
+                  
+                  <div class="education-details mb-4">
+                    <p class="mb-2">
+                      <i class="ti-university text-primary mr-2"></i>
+                      <span class="font-weight-bold">Institution:</span>
+                      <span class="text-dark">Shri Vaishnav Institute of Technology and Science</span>
+                    </p>
+                    
+                    <p class="mb-2">
+                      <i class="ti-location-pin text-primary mr-2"></i>
+                      <span class="font-weight-bold">Location:</span>
+                      <span class="text-dark">Indore, Madhya-Pradesh, India</span>
+                    </p>
+                    
+                    <p class="mb-2">
+                      <i class="ti-calendar text-primary mr-2"></i>
+                      <span class="font-weight-bold">Duration:</span>
+                      <span class="text-dark">July 2014 - July 2018</span>
+                    </p>
+                    
+                  </div>
+                  
+                  <!-- Achievements -->
+                  <div class="achievements">
+                    <h5 class="text-primary mb-3">Key Achievement</h5>
+                    <div class="achievement-item bg-light p-3 rounded">
+                      <i class="ti-cup text-warning mr-2"></i>
+                      <span class="text-dark">GATE CSE (2019-2020)</span>
+                      <span class="badge badge-success ml-2">90 percentile</span>
+                      <p class="text-muted mb-0 small">Conducted by IIT-D National Exam</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+  
+  <!-- Background Elements -->
+  <div class="edu-bg-elements">
+    <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+    <div class="decoration-blob blob1 bg-primary"></div>
+    <div class="decoration-blob blob2 bg-info"></div>
+  </div>
+
+  <style>
+    .education-logo-container {
+      transition: transform 0.3s ease;
+    }
+    .education-logo-container:hover {
+      transform: scale(1.05);
+    }
+    .scholar-hat-icon {
+      padding: 30px;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .scholar-hat-icon:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    .decoration-blob {
+      position: absolute;
+      opacity: 0.1;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .blob1 {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      right: 10%;
+    }
+    .blob2 {
+      width: 150px;
+      height: 150px;
+      bottom: 50px;
+      left: 10%;
+    }
+    .achievement-item {
+      transition: all 0.3s ease;
+    }
+    .achievement-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
 </section>
+<!-- /education -->
+<!-- /education -->
 <!-- /education -->
 
 <!-- services 
@@ -439,30 +770,54 @@
 <!-- /portfolio -->
 
 <!-- testimonial -->
+<!-- testimonial -->
 <section class="section bg-primary position-relative testimonial-bg-shapes">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <h2 class="section-title text-white mb-5">Recommendations</h2>
       </div>
-      <div class="col-lg-10 mx-auto testimonial-slider">
+      <div class="col-lg-10 mx-auto testimonial-slider" data-slider-settings='{"autoplay": true, "autoplaySpeed": 5000, "arrows": false, "dots": true, "pauseOnHover": true}'>
         <!-- slider-item -->
         <div class="text-center testimonial-content">
           <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">I had the chance to work with Kuldeep for almost 6 months in TCS,collaborating in a sales and trading,middle office,production support project. Its rare that you come across a standout talent like Kuldeep. He has sound technical knowledge and is always keen to learn new things. He has the ability to juggle between multiple tasks and is a man of his words. He is a team player. As a team member, Kuldeep earns my highest recommendation.</p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src=""
-            alt="">
+          <p class="text-white mb-4">I had the chance to work with Kuldeep for almost 6 months in TCS, collaborating in a sales and trading, middle office, production support project. It's rare that you come across a standout talent like Kuldeep. He has sound technical knowledge and is always keen to learn new things.</p>
+          <div class="avatar-circle mb-4">
+            <i class="ti-user"></i>
+          </div>
           <h4 class="text-white">Srisakhi Sengupta</h4>
-          <h6 class="text-light mb-4">Managed Kuldeep Directly</h6>
+          <h6 class="text-light mb-4">Senior Manager at Morgan Stanley</h6>
         </div>
         <!-- slider-item -->
         <div class="text-center testimonial-content">
           <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">Few people have the opportunity to work with someone ‘Ridiculously efficient’ like Kuldeep. I had the pleasure of working with Kuldeep collaborating on several project and I'm fairly impressed by the proficiency he commands on his skills. No matter how tense a meeting, Kuldeep made sure everyone left with a smile. He demonstrates enthusiasm, resourcefulness and critical thinking in unusual situations to accomplish the end goal. Kuldeep would be an asset to any company.</p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src=""
-            alt="">
-          <h4 class="text-white">Aishwarya Mahajan</h4>
-          <h6 class="text-light mb-4">Worked together on Projects</h6>
+          <p class="text-white mb-4">I have had the pleasure of working closely with Kuldeep for over a year at TCS, where he has consistently demonstrated exceptional expertise in Big Data Analytics, Programming (Python) and Cloud technologies. His ability to adapt to new technologies and methodologies has been instrumental in delivering high-quality solutions to complex business challenges.</p>
+          <div class="avatar-circle mb-4">
+            <i class="ti-user"></i>
+          </div>
+          <h4 class="text-white">Payal Ghosal</h4>
+          <h6 class="text-light mb-4">Financial Analyst at Siemens</h6>
+        </div>
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Kuldeep is an excellent resource, and a master at Data Engineering. He is dedicated, hard and smart worker with an easiness to build interpersonal relations. He is always capable of adapting new work environments and is a quick learner with excellent fundamentals.</p>
+          <div class="avatar-circle mb-4">
+            <i class="ti-user"></i>
+          </div>
+          <h4 class="text-white">Sundarm Soni</h4>
+          <h6 class="text-light mb-4">SDE-III at Morgan Stanley</h6>
+        </div>
+        
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Kuldeep was an outstanding student who consistently demonstrated exceptional skills and knowledge. His excellent communication skills, strong work ethic, and ability to work well under pressure have made him a valuable professional. He is a team player who is always willing to collaborate.</p>
+          <div class="avatar-circle mb-4">
+            <i class="ti-user"></i>
+          </div>
+          <h4 class="text-white">Rahul Patel</h4>
+          <h6 class="text-light mb-4">Faculty at Sunstone</h6>
         </div>
       </div>
     </div>
@@ -474,102 +829,355 @@
   <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
   <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
   <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
+
+  <style>
+    .avatar-circle {
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .avatar-circle i {
+      font-size: 35px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .testimonial-content:hover .avatar-circle {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .slick-dots {
+      bottom: -50px;
+    }
+
+    .slick-dots li button:before {
+      color: white;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: white;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function(){
+      $('.testimonial-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        arrows: false,
+        pauseOnHover: true,
+        fade: true,
+        speed: 1000
+      });
+    });
+  </script>
 </section>
+<!-- /testimonial -->
 <!-- /testimonial -->
 
 <!-- client logo slider -->
+<!-- client/technology logo slider -->
 <section class="section pb-0">
   <div class="container">
-    <div class="client-logo-slider d-flex align-items-center">
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1024px-Apache_Spark_logo.svg.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://i.pinimg.com/originals/50/f1/58/50f1582a95bdac10f1c3fa295c8b947b.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://image.pngaaa.com/681/876681-middle.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-          src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Emblem.png" alt="client-logo"></a>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-5">Technologies & Tools</h2>
+      </div>
+    </div>
+    <div class="logo-slider-container">
+      <div class="logo-slide-track">
+        <!-- First Set of Logos -->
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Apache Airflow">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google-cloud-platform.svg" alt="Google Cloud Platform">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apache_kafka.svg" alt="Apache Kafka">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="Elasticsearch">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" alt="Hadoop">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" alt="Scala">
+        </div>
+
+        <!-- Duplicate Set for Continuous Loop -->
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Apache Airflow">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google-cloud-platform.svg" alt="Google Cloud Platform">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_kafka_logo_icon_167866.png" alt="Apache Kafka">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="Elasticsearch">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" alt="Hadoop">
+        </div>
+        <div class="logo-container">
+          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" alt="Scala">
+        </div>
+      </div>
     </div>
   </div>
+
+  <style>
+    .logo-slider-container {
+      background: white;
+      height: 100px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .logo-slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(200px * 24); /* Adjust based on number of logos */
+    }
+
+    .logo-container {
+      height: 100px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    .tech-logo {
+      max-height: 60px;
+      max-width: 120px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container:hover .tech-logo {
+      transform: scale(1.1);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-200px * 12)); /* Adjust based on number of original logos */
+      }
+    }
+
+    .logo-slider-container:hover .logo-slide-track {
+      animation-play-state: paused;
+    }
+
+    @media (max-width: 768px) {
+      .logo-container {
+        width: 150px;
+      }
+      .tech-logo {
+        max-height: 50px;
+        max-width: 100px;
+      }
+    }
+  </style>
 </section>
+<!-- /client logo slider -->
 <!-- /client logo slider -->
 
 <!-- blog -->
-<div id="blog">
+<!-- blog section -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h2 class="section-title display-4 mb-5">Blogs & Articles</h2>
+      </div>
+      
+      <!-- Newsletter Card -->
+      <div class="col-12 mb-5">
+        <div class="newsletter-card text-center p-5 rounded">
+          <i class="ti-light-bulb text-white mb-3" style="font-size: 2.5rem;"></i>
+          <h2 class="text-white mb-3">Subscribe to My Newsletter</h2>
+          <p class="text-white mb-4">Stay updated with my latest insights on Data Engineering, Cloud, and Big Data</p>
+          <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=6983848189787271168" 
+             class="newsletter-btn">
+            <i class="ti-linkedin mr-2"></i>Subscribe On LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Platform Links -->
+      <div class="col-12 text-center">
+        <div class="platform-links">
+          <a href="https://medium.com/@kuldeep27396" class="platform-badge medium">
+            <i class="ti-pencil-alt mr-2"></i>Medium
+          </a>
+          <a href="https://www.linkedin.com/in/kuldeep27396/recent-activity/posts/" class="platform-badge linkedin">
+            <i class="ti-linkedin mr-2"></i>LinkedIn Articles
+          </a>
+          <a href="https://www.analyticsvidhya.com/blog/author/kuldeep27396/" class="platform-badge analytics">
+            <i class="ti-stats-up mr-2"></i>Analytics Vidhya
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .newsletter-card {
+      background: linear-gradient(135deg, #5E3BE0 0%, #4A00E0 100%);
+      box-shadow: 0 10px 30px rgba(74, 0, 224, 0.15);
+    }
+
+    .newsletter-btn {
+      background: white;
+      color: #4A00E0;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .newsletter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #4A00E0;
+    }
+
+    .platform-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .platform-badge {
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+    }
+
+    .platform-badge.medium {
+      background: #12100E;
+    }
+
+    .platform-badge.linkedin {
+      background: #0077B5;
+    }
+
+    .platform-badge.analytics {
+      background: #2962FF;
+    }
+
+    .platform-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .platform-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .platform-badge {
+        width: 200px;
+        justify-content: center;
+      }
+    }
+  </style>
+</section>
+<!-- /blog section -->
+<!-- /blog -->
+
+<!-- contact -->
+<!-- contact -->
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Blogs</h2>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <img class="rounded card-img-top" src="images/blog/post-1.jpeg" alt="post-thumb" width="2000" height="250">
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="https://www.analyticsvidhya.com/blog/2021/08/slack-data-engineering-design-and-architecture/">Slack Data Engineering: Design and Architecture</a>
-            </h4>
-            <p class="cars-text">Slack is a communication platform. Users send messages inside of channels. </p>
-            <a href="https://www.analyticsvidhya.com/blog/2021/08/slack-data-engineering-design-and-architecture/" class="btn btn-xs btn-primary">Read More</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <img class="rounded card-img-top" src="images/blog/post-3.jpg" alt="post-thumb">
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="https://www.analyticsvidhya.com/blog/2021/05/merits-of-using-deep-learning-and-other-machine-learning-approach-in-the-area-of-forecasting-at-uber/">Data forecasting at Uber</a>
-            </h4>
-            <p class="cars-text">The big area of focus is forecasting because it does help decision-making. And so in this blog, I will give you a bit of a survey of the machine learning approaches Uber used to address the problem of forecasting..</p>
-            <a href="https://www.analyticsvidhya.com/blog/2021/05/merits-of-using-deep-learning-and-other-machine-learning-approach-in-the-area-of-forecasting-at-uber/" class="btn btn-xs btn-primary">Read More</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <img class="rounded card-img-top" src="images/blog/post-2.jpg" alt="post-thumb">
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="https://www.analyticsvidhya.com/blog/2021/05/spotify-machine-learning-to-personalize-the-user-experience/">Spotify: Machine learning to personalize the user experience</a>
-            </h4>
-            <p class="cars-text">User engagement is the quality of the user experience that emphasizes the positive aspect of the interaction....</p>
-            <a href="https://www.analyticsvidhya.com/blog/2021/05/spotify-machine-learning-to-personalize-the-user-experience/" class="btn btn-xs btn-primary">Read More</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-<!-- /blog -->
-
-<!-- contact -->
-<div id="contact">
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
+        <h2 class="section-title">Get In Touch</h2>
       </div>
       <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Send me a Hi..!</h4>
-          <form method="POST" form action="https://formspree.io/mdownbaw" class="row">
+        <div class="bg-white rounded text-center p-5 shadow-down mb-5">
+          <div class="contact-form-header mb-4">
+            <i class="ti-email text-primary" style="font-size: 2.5rem;"></i>
+            <h4 class="mt-3 mb-2">Send me a Hi..!</h4>
+          </div>
+
+          <form action="https://formspree.io/f/mdownbaw" method="POST" class="row">
             <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
+              <input type="text" name="name" class="form-control px-0 mb-4" placeholder="Your Name" required>
             </div>
             <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4" required>
+              <input type="email" name="email" class="form-control px-0 mb-4" placeholder="Email Address" required>
             </div>
             <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here" required></textarea>
+              <textarea name="message" class="form-control px-0 mb-4" placeholder="Type Message Here" required></textarea>
             </div>
             <div class="col-lg-6 col-10 mx-auto">
               <button class="btn btn-primary w-100">send</button>
@@ -580,45 +1188,171 @@
     </div>
   </div>
 </section>
-</div>
-<!-- /contact -->
 
 <!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
+<footer class="bg-dark">
+  <div class="section py-4">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">kuldeep27396@gmail.com</p>
+      <div class="row align-items-center">
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="footer-links d-flex justify-content-center justify-content-md-start">
+            <a href="#about" class="text-white-50 mx-2">About</a>
+            <a href="#Projects" class="text-white-50 mx-2">Projects</a>
+            <a href="#blog" class="text-white-50 mx-2">Blog</a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Bengaluru, Karnataka, India</p>
+
+        <!-- Location Badge -->
+        <div class="col-md-4 mb-3 mb-md-0 text-center">
+          <div class="location-badge mx-auto">
+            <i class="ti-location-pin location-icon"></i>
+            <span class="location-text">Made with ❤️ in India</span>
+          </div>
         </div>
+
+        <!-- Social Links -->
         <div class="col-md-4">
-          <h5 class="text-light">Social Media</h5>
-          &nbsp;
-          <a class="text-white" href="https://www.facebook.com/kuldeep27396"><i class="ti-facebook"></i></a>
-          &nbsp;
-          &nbsp;
-          <a class="text-white" href="https://github.com/kuldeep27396"><i class="ti-github"></i></a></li>
-          &nbsp;
-          &nbsp;
-          <a class="text-white" href="https://www.linkedin.com/in/kuldeep27396"><i class="ti-linkedin"></i></a>
-          &nbsp;
-          &nbsp;
-          <a class="text-white" href="https://twitter.com/kuldeep27396"><i class="ti-twitter"></i></a>
-          &nbsp;
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/kuldeep27396" class="social-link" title="LinkedIn">
+              <i class="ti-linkedin"></i>
+            </a>
+            <a href="https://github.com/kuldeep27396" class="social-link" title="GitHub">
+              <i class="ti-github"></i>
+            </a>
+            <a href="https://twitter.com/kuldeep27396" class="social-link" title="Twitter">
+              <i class="ti-twitter"></i>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <p class="text-white-50 mb-0 copyright-text">
+            © <span id="copyright-year"></span> Kuldeep Pal | Data Engineer
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright &copy;<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> Designed &amp; Developed by <a class="text-white-50" href="#">Kuldeep</a></p>
-  </div>
+
+  <style>
+    footer {
+      background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: white !important;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      justify-content: flex-end;
+    }
+
+    .social-link {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: white;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .social-link:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .location-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .location-badge:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .location-icon {
+      color: var(--primary);
+      margin-right: 8px;
+      font-size: 1rem;
+    }
+
+    .location-text {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.85rem;
+    }
+
+    .copyright-text {
+      font-size: 0.85rem;
+    }
+
+    /* Contact Form Styles */
+    .form-control {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      border-radius: 0;
+      padding: 15px 0;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: var(--primary);
+    }
+
+    .btn-primary {
+      padding: 12px 35px;
+      border-radius: 30px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .social-links {
+        justify-content: center;
+        margin-top: 15px;
+      }
+      
+      .footer-links {
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+
+  <script>
+    function updateCopyright() {
+      const currentYear = new Date().getFullYear();
+      document.getElementById('copyright-year').textContent = currentYear;
+    }
+    updateCopyright();
+  </script>
 </footer>
 <!-- /footer -->
 
