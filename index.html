@@ -11,7 +11,7 @@
   <!-- Mobile Specific Metas
   ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Creative Portfolio Template">
+  <meta name="description" content="Kuldeep Pal">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Kross Template v1.0">
@@ -88,10 +88,14 @@
         <!-- Compact Expertise Pills -->
         <div class="expertise-cloud">
           <div class="expertise-pill"><i class="ti-server"></i>Data Platform</div>
+          <div class="expertise-pill"><i class="ti-server"></i>Data Lakehouse</div>
+          <div class="expertise-pill"><i class="ti-server"></i>Data Modelling</div>
+          <div class="expertise-pill"><i class="ti-server"></i>Data Warehousing</div>
           <div class="expertise-pill"><i class="ti-cloud"></i>Backend</div>
           <div class="expertise-pill"><i class="ti-rocket"></i>CI/CD</div>
           <div class="expertise-pill"><i class="ti-thought"></i>GenAI</div>
           <div class="expertise-pill"><i class="ti-stats-up"></i>ML</div>
+          <div class="expertise-pill"><i class="ti-server"></i>Data Lake</div>
         </div>
       </div>
     </div>
@@ -462,73 +466,177 @@
 
 <!-- experience -->
 <!-- experience -->
-<!-- experience -->
 <div id="exp">
   <section class="section">
     <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
           <h2 class="section-title">Experience</h2>
         </div>
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="images/experience/walmart.png" alt="icon">
-          <p class="mb-0">June 2022 - Present</p>
-          <h4>Data Engineer - 𝐼𝐼𝐼</h4>
-          <h6 class="text-light">Walmart Global Tech.</h6>
-          <p class="text-muted">
-            Led development of real-time fraud detection pipelines using Spark Structured Streaming and Kafka, resulting in $4M recovered from gift card fraud and $544K savings in insurance fraud investigations.
-            <br><br>
-            Built multiple critical data platforms including healthcare monitoring, SEC compliance notifications, and implemented GenAI solutions while maintaining strong focus on data security and cost optimization.
-          </p>
-          <div class="skills-section mt-3">
-            <h6 class="text-primary">Key Skills:</h6>
-            <p class="text-muted small">
-              PySpark • Kafka • BigQuery • Elasticsearch • Airflow • Spring Boot • GenAI • Java • Scala • Docker • Kubernetes
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="images/experience/zs.png" alt="icon">
-          <p class="mb-0">September 2021 - June 2022</p>
-          <h4>Data Engineer</h4>
-          <h6 class="text-light">ZS ASSOCIATES</h6>
-          <p class="text-muted">
-            Made key contributions to ZAIDYN™ SaaS product development, building unified data analytics solution for clinical trial feasibility analysis.
-            <br><br>
-            Optimized AWS EMR data processing reducing pipeline runtime from 6 to 3.5 hours while implementing entity resolution for high-quality data matching.
-          </p>
-          <div class="skills-section mt-3">
-            <h6 class="text-primary">Key Skills:</h6>
-            <p class="text-muted small">
-              AWS EMR • Hive • PySpark • SQL • Airflow • Data Modeling • AWS S3 • Entity Resolution • Data Warehousing
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="images/experience/tcs.png" alt="icon">
-          <p class="mb-0">September 2018 - September 2021</p>
-          <h4>Data Engineer</h4>
-          <h6 class="text-light">TATA CONSULTANCY SERVICES</h6>
-          <p class="text-muted">
-            Clients: Morgan Stanley, Nassau RE
-            <br><br>
-            Developed AWS-based data pipelines for reinsurance data migration and warehousing, reducing manual alert workload by 50% through automation.
-            <br><br>
-            Built ETL jobs for sales & trading reporting and implemented OCR solutions for document digitization.
-          </p>
-          <div class="skills-section mt-3">
-            <h6 class="text-primary">Key Skills:</h6>
-            <p class="text-muted small">
-              AWS Glue • Python • Redshift • Lambda • Athena • Shell Scripts • Tableau • Computer Vision • ETL • SQL
-            </p>
+        
+        <div class="col-lg-10">
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-icon">
+                <img src="images/experience/walmart-logo.svg" alt="Walmart" class="experience-logo">
+              </div>
+              <div class="experience-content">
+                <h4 class="experience-title">Walmart Global Tech</h4>
+                <p class="experience-duration">June 2022 - Present</p>
+                <div class="experience-skills">
+                  <span class="badge badge-primary">PySpark</span>
+                  <span class="badge badge-info">Kafka</span>
+                  <span class="badge badge-success">BigQuery</span>
+                  <span class="badge badge-danger">Elasticsearch</span>
+                  <span class="badge badge-warning">Airflow</span>
+                  <span class="badge badge-primary">Spring Boot</span>
+                  <span class="badge badge-info">GenAI</span>
+                  <span class="badge badge-success">Java</span>
+                  <span class="badge badge-danger">Scala</span>
+                  <span class="badge badge-warning">Docker</span>
+                  <span class="badge badge-primary">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <img src="images/experience/zs-logo.png" alt="ZS Associates" class="experience-logo">
+              </div>
+              <div class="experience-content">
+                <h4 class="experience-title">ZS Associates</h4>
+                <p class="experience-duration">September 2021 - June 2022</p>
+                <div class="experience-skills">
+                  <span class="badge badge-primary">AWS EMR</span>
+                  <span class="badge badge-info">Hive</span>
+                  <span class="badge badge-success">PySpark</span>
+                  <span class="badge badge-danger">SQL</span>
+                  <span class="badge badge-warning">Airflow</span>
+                  <span class="badge badge-primary">Data Modeling</span>
+                  <span class="badge badge-info">AWS S3</span>
+                  <span class="badge badge-success">Entity Resolution</span>
+                  <span class="badge badge-danger">Data Warehousing</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="experience-item">
+              <div class="experience-icon">
+                <img src="images/experience/tcs-logo.png" alt="TCS" class="experience-logo">
+              </div>
+              <div class="experience-content">
+                <h4 class="experience-title">Tata Consultancy Services</h4>
+                <p class="experience-duration">September 2018 - September 2021</p>
+                <p class="experience-clients">Clients: Morgan Stanley, Nassau RE</p>
+                <div class="experience-skills">
+                  <span class="badge badge-primary">AWS Glue</span>
+                  <span class="badge badge-info">Python</span>
+                  <span class="badge badge-success">Redshift</span>
+                  <span class="badge badge-danger">Lambda</span>
+                  <span class="badge badge-warning">Athena</span>
+                  <span class="badge badge-primary">Shell Scripts</span>
+                  <span class="badge badge-info">Tableau</span>
+                  <span class="badge badge-success">Computer Vision</span>
+                  <span class="badge badge-danger">ETL</span>
+                  <span class="badge badge-warning">SQL</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   </div>
-  <!-- ./experience -->
-  <!-- ./experience -->
+  
+  <style>
+  .experience-timeline {
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .experience-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #4A00E0;
+  }
+  
+  .experience-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 50px;
+  }
+  
+  .experience-item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 4px solid #4A00E0;
+    border-radius: 50%;
+  }
+  
+  .experience-icon {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 60px;
+    height: 60px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-logo {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .experience-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  .experience-title {
+    color: #4A00E0;
+    margin-bottom: 8px;
+  }
+  
+  .experience-duration {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience-clients {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .experience-skills .badge {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .badge-primary { background-color: #4A00E0; color: #fff; }
+  .badge-info { background-color: #17a2b8; color: #fff; }
+  .badge-success { background-color: #28a745; color: #fff; }
+  .badge-danger { background-color: #dc3545; color: #fff; }
+  .badge-warning { background-color: #ffc107; color: #212529; }
+  </style>
 <!-- ./experience -->
 
 <!-- education -->
@@ -702,71 +810,226 @@
   </div>
 </section>
 <!-- /services -->
--->
+
 <!-- portfolio -->
 <div id="Projects">
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Projects</h2>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Personal Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-header">
+              <i class="ti-wallet project-icon"></i>
+              <h4 class="project-title">SplitKro</h4>
+            </div>
+            <p class="project-description">A robust expense sharing application built with Spring Boot, designed to help users manage shared expenses easily and efficiently.</p>
+            <div class="project-footer">
+              <div class="tech-badges">
+                <span class="badge badge-java">Java</span>
+                <span class="badge badge-springboot">Spring Boot</span>
+                <span class="badge badge-backend">Backend</span>
+                <span class="badge badge-web">Web App</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/SplitKro" class="btn btn-sm btn-outline-primary">
+                <i class="ti-github mr-2"></i>View Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-header">
+              <i class="ti-bolt project-icon"></i>
+              <h4 class="project-title">Real-time Streaming Pipeline</h4>
+            </div>
+            <p class="project-description">Built a real-time content popularity tracker using Kafka and Flink for streaming data processing.</p>
+            <div class="project-footer">
+              <div class="tech-badges">
+                <span class="badge badge-kafka">Kafka</span>
+                <span class="badge badge-flink">Flink</span>
+                <span class="badge badge-stream">Streaming</span>
+                <span class="badge badge-data">Data Processing</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/realtime-streaming-pipeline" class="btn btn-sm btn-outline-primary">
+                <i class="ti-github mr-2"></i>View Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-header">
+              <i class="ti-bar-chart project-icon"></i>
+              <h4 class="project-title">Real-time OLAP</h4>
+            </div>
+            <p class="project-description">Developed a real-time analytics pipeline with Kafka and Pinot for efficient data querying.</p>
+            <div class="project-footer">
+              <div class="tech-badges">
+                <span class="badge badge-kafka">Kafka</span>
+                <span class="badge badge-pinot">Pinot</span>
+                <span class="badge badge-analytics">OLAP</span>
+                <span class="badge badge-query">Real-time Query</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/realtime-olap" class="btn btn-sm btn-outline-primary">
+                <i class="ti-github mr-2"></i>View Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-header">
+              <i class="ti-magic-alt project-icon"></i>
+              <h4 class="project-title">GenAI Projects</h4>
+            </div>
+            <p class="project-description">
+              I have worked for <span style="color: #4A00E0;">text-to-SQL conversion</span> with OpenAI integration. I also worked with <span style="color: #8E2DE2;">synthetic data generation</span> with LLM.
+            </p>
+            <div class="project-footer">
+              <div class="tech-badges">
+                <span class="badge badge-python">Python</span>
+                <span class="badge badge-openai">OpenAI</span>
+                <span class="badge badge-sql">SQL</span>
+                <span class="badge badge-ml">Transformer</span>
+                <span class="badge badge-llm">LLM</span>
+                <span class="badge badge-ai">AI</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/text2sql-converter" class="btn btn-sm btn-outline-primary">
+                <i class="ti-github mr-2"></i>View Project
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row shuffle-wrapper">
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">view project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </section>
   </div>
-</section>
-</div>
+  
+  <style>
+  .project-card {
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .project-icon {
+    font-size: 2.2rem;
+    margin-right: 15px;
+    background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .project-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .project-description {
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .badge:hover {
+    transform: translateY(-2px);
+  }
+  
+  .badge-java { background-color: #E76F00; color: white; }
+  .badge-springboot { background-color: #6DB33F; color: white; }
+  .badge-backend { background-color: #00ACC1; color: white; }
+  .badge-web { background-color: #673AB7; color: white; }
+  .badge-kafka { background-color: #231F20; color: white; }
+  .badge-flink { background-color: #E6526F; color: white; }
+  .badge-stream { background-color: #0078D4; color: white; }
+  .badge-data { background-color: #7D4698; color: white; }
+  .badge-kafka { background-color: #231F20; color: white; }
+  .badge-pinot { background-color: #2C63A8; color: white; }
+  .badge-analytics { background-color: #F9A825; color: white; }
+  .badge-query { background-color: #00BCD4; color: white; }
+  .badge-python { background-color: #3776AB; color: white; }
+  .badge-openai { background-color: #10A37F; color: white; }
+  .badge-sql { background-color: #4479A1; color: white; }
+  .badge-ml { background-color: #FF6F61; color: white; }
+  .badge-llm { background-color: #9C27B0; color: white; }
+  .badge-ai { background-color: #673AB7; color: white; }
+  
+  .project-card.genai-project {
+    border: 1px solid #e9ecef;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .genai-project-content {
+    margin-bottom: 15px;
+  }
+  
+  .genai-project-item {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .genai-project-item:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  }
+  
+  .genai-project-subtitle {
+    margin-bottom: 5px;
+    color: #4A00E0;
+    font-size: 1.1rem;
+  }
+  
+  .genai-project-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  </style>
 <!-- /portfolio -->
 
 <!-- testimonial -->
