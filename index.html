@@ -1,1639 +1,1849 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
   <meta charset="utf-8">
-  <title>Kuldeep Pal</title>
-
-  <!-- Mobile Specific Metas
-  ================================================== -->
+  <title>Kuldeep Pal - Data Engineer</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Kuldeep Pal">
+  <meta name="description" content="Kuldeep Pal - Data Engineer with 7+ years of experience">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Kross Template v1.0">
+  <meta name="author" content="Kuldeep Pal">
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Plugins -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
-</head>
-<body>
-  
-
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/signature.png" alt="Myself" width="200" height="40"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#exp">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- hero area -->
-<!-- hero area -->
-<section class="hero-area bg-primary position-relative overflow-hidden">
-  <!-- Dynamic Background Elements -->
-  <div class="animated-background">
-    <div class="floating-shape dot-group-1"></div>
-    <div class="floating-shape leaf-1"></div>
-    <div class="floating-shape dot-group-2"></div>
-    <div class="floating-shape leaf-2"></div>
-    <div class="floating-shape leaf-3"></div>
-    <div class="floating-shape dot-group-3"></div>
-  </div>
-
-  <div class="container position-relative">
-    <div class="row align-items-center">
-      <div class="col-lg-8 mx-auto text-center py-5">
-        <h1 class="text-white font-tertiary mb-2">Hi! I'm Kuldeep Pal</h1>
-        <h2 class="text-white font-secondary h3 mb-4">I'm a Data Engineer</h2>
-        
-        <!-- Compact Expertise Pills -->
-        <div class="expertise-cloud">
-          <div class="expertise-pill"><i class="ti-server"></i>Data Platform</div>
-          <div class="expertise-pill"><i class="ti-server"></i>Data Lakehouse</div>
-          <div class="expertise-pill"><i class="ti-server"></i>Data Modelling</div>
-          <div class="expertise-pill"><i class="ti-server"></i>Data Warehousing</div>
-          <div class="expertise-pill"><i class="ti-cloud"></i>Backend</div>
-          <div class="expertise-pill"><i class="ti-rocket"></i>CI/CD</div>
-          <div class="expertise-pill"><i class="ti-thought"></i>GenAI</div>
-          <div class="expertise-pill"><i class="ti-stats-up"></i>ML</div>
-          <div class="expertise-pill"><i class="ti-server"></i>Data Lake</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Compact social icons -->
-  <div class="social-strip">
-    <a href="https://www.linkedin.com/in/kuldeep27396" class="social-icon"><i class="ti-linkedin"></i></a>
-    <a href="https://github.com/kuldeep27396" class="social-icon"><i class="ti-github"></i></a>
-    <a href="https://twitter.com/kuldeep27396" class="social-icon"><i class="ti-twitter"></i></a>
-  </div>
-
   <style>
-    .hero-area {
-      min-height: 40vh;
-      background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+    /* Modern Light Theme Styles */
+    :root {
+      --primary-color: #3B82F6;
+      --secondary-color: #8B5CF6;
+      --accent-color: #06B6D4;
+      --text-dark: #1F2937;
+      --text-light: #6B7280;
+      --bg-light: #F9FAFB;
+      --bg-white: #FFFFFF;
+      --border-light: #E5E7EB;
+      --success: #10B981;
+      --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     }
 
-    .animated-background {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background: var(--bg-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    .navbar {
+      background: rgba(255, 255, 255, 0.98) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary-color) !important;
+    }
+
+    .nav-link {
+      color: var(--text-dark) !important;
+      font-weight: 500;
+      padding: 0.5rem 1rem !important;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 60%;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color) !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      min-height: 90vh;
+      background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 50%, #F0FDFA 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
       overflow: hidden;
+      padding: 100px 0 50px;
     }
 
-    .floating-shape {
+    .hero-section::before {
+      content: '';
       position: absolute;
-      pointer-events: none;
-      opacity: 0.15;
-    }
-
-    .dot-group-1 {
-      background: url('images/illustrations/dots-group-orange.png') no-repeat;
-      width: 100px;
-      height: 100px;
-      top: 10%;
-      left: 5%;
-      animation: float 8s infinite;
-    }
-
-    .dot-group-2 {
-      background: url('images/illustrations/dots-group-cyan.png') no-repeat;
-      width: 80px;
-      height: 80px;
-      bottom: 10%;
-      right: 5%;
-      animation: float 9s infinite;
-    }
-
-    .dot-group-3 {
-      background: url('images/illustrations/dots-orange.png') no-repeat;
-      width: 60px;
-      height: 60px;
-      top: 30%;
-      right: 15%;
-      animation: float 7s infinite;
-    }
-
-    .leaf-1 {
-      background: url('images/illustrations/leaf-cyan.png') no-repeat;
-      width: 100px;
-      height: 100px;
-      top: 20%;
-      right: 20%;
-      animation: floatRotate 12s infinite;
-    }
-
-    .leaf-2 {
-      background: url('images/illustrations/leaf-orange.png') no-repeat;
-      width: 70px;
-      height: 70px;
-      bottom: 20%;
-      left: 20%;
-      animation: floatRotate 10s infinite reverse;
-    }
-
-    .leaf-3 {
-      background: url('images/illustrations/leaf-yellow.png') no-repeat;
-      width: 60px;
-      height: 60px;
-      top: 50%;
-      left: 10%;
-      animation: floatRotate 11s infinite;
+      top: -50%;
+      right: -20%;
+      width: 70%;
+      height: 150%;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: float 20s infinite;
     }
 
     @keyframes float {
-      0%, 100% {
-        transform: translateY(0) translateX(0);
-      }
-      25% {
-        transform: translateY(-10px) translateX(5px);
-      }
-      50% {
-        transform: translateY(0) translateX(10px);
-      }
-      75% {
-        transform: translateY(10px) translateX(5px);
-      }
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(30px, -30px) rotate(5deg); }
+      66% { transform: translate(-20px, 20px) rotate(-5deg); }
     }
 
-    @keyframes floatRotate {
-      0%, 100% {
-        transform: translateY(0) translateX(0) rotate(0deg);
-      }
-      25% {
-        transform: translateY(-15px) translateX(10px) rotate(5deg);
-      }
-      50% {
-        transform: translateY(0) translateX(20px) rotate(0deg);
-      }
-      75% {
-        transform: translateY(15px) translateX(10px) rotate(-5deg);
-      }
-    }
-
-    .expertise-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+    .hero-content {
       position: relative;
       z-index: 2;
     }
 
-    .expertise-pill {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(5px);
+    .hero-badge {
+      display: inline-block;
+      background: var(--bg-white);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+      animation: slideDown 0.6s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      animation: fadeInUp 0.8s ease-out 0.4s both;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+      animation: fadeInUp 0.8s ease-out 0.6s both;
+    }
+
+    .btn-primary-custom {
+      background: var(--primary-color);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      animation: fadeInUp 0.8s ease-out 0.8s both;
+    }
+
+    .btn-primary-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    .btn-secondary-custom {
+      background: transparent;
+      color: var(--primary-color);
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: 2px solid var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      margin-left: 1rem;
+      animation: fadeInUp 0.8s ease-out 0.8s both;
+    }
+
+    .btn-secondary-custom:hover {
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 2rem;
+      animation: fadeInUp 0.8s ease-out 1s both;
+    }
+
+    .skill-tag {
+      background: var(--bg-white);
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* About Section */
+    .about-section {
+      background: var(--bg-light);
+    }
+
+    .about-card {
+      background: var(--bg-white);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-box {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 15px;
+      color: white;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .stat-box:hover {
+      transform: scale(1.05);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      opacity: 0.95;
+      margin-top: 5px;
+    }
+
+    /* Skills Section */
+    .skill-card {
+      background: var(--bg-white);
+      padding: 35px 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      text-align: center;
+      margin-bottom: 30px;
+      border: 2px solid transparent;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border-color: var(--primary-color);
+    }
+
+    .skill-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover .skill-icon {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    .skill-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    .skill-description {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* Experience Timeline */
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+      margin-left: auto;
+    }
+
+    .timeline-content {
+      background: var(--bg-white);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      width: 45%;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .timeline-content:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      border: 4px solid var(--bg-white);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+      top: 30px;
+    }
+
+    .company-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 5px;
+    }
+
+    .job-duration {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .tech-badge {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--primary-color);
       padding: 5px 12px;
       border-radius: 20px;
-      color: white;
       font-size: 0.85rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-weight: 500;
+    }
+
+    /* Projects Section */
+    .projects-section {
+      background: var(--bg-light);
+    }
+
+    .project-card {
+      background: var(--bg-white);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       transition: all 0.3s ease;
-    }
-
-    .expertise-pill:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-2px);
-    }
-
-    .social-strip {
-      position: absolute;
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%);
+      height: 100%;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      z-index: 2;
     }
 
-    .social-icon {
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 40px 30px;
       color: white;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
     }
 
-    .social-icon:hover {
-      transform: translateX(-2px);
-      color: rgba(255, 255, 255, 0.8);
+    .project-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
     }
 
-    @media (max-width: 768px) {
-      .hero-area {
-        min-height: 35vh;
-      }
-      .expertise-pill {
-        font-size: 0.8rem;
-        padding: 4px 10px;
-      }
-      .social-strip {
-        right: 15px;
-      }
-      .floating-shape {
-        transform: scale(0.7);
-      }
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
-  </style>
-</section>
-<!-- /hero area -->
-<!-- /hero area -->
 
-<!-- about -->
-<!-- about -->
-<div id="about">
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto text-center">
-          <p class="font-secondary paragraph-lg">
-            <span class="text-primary font-weight-bold">👋 Hello! I'm Kuldeep Pal</span>
-            <br><br>
-            <span class="text-dark">A passionate <span class="text-primary">Data Engineer</span> with <span class="text-success">7+ years</span> of experience in Big Data Analytics and Cloud Technologies. 🚀</span>
-            <br><br>
-            
-            <span class="text-muted">💼 Throughout my journey, I've worked across diverse domains:</span><br>
-            <span class="badge badge-primary m-1">Capital Markets</span>
-            <span class="badge badge-info m-1">Insurance</span>
-            <span class="badge badge-success m-1">FinTech</span>
-            <span class="badge badge-warning m-1">Pharmaceutical</span>
-            <span class="badge badge-danger m-1">Healthcare</span>
-            <span class="badge badge-secondary m-1">Retail/E-commerce</span>
-            
-            <br><br>
-            <span class="text-dark">🎯 Core Expertise:</span><br>
-            <div class="text-left ml-4">
-              <p>✨ Building scalable data warehouses & data lakes using modern cloud platforms</p>
-              <p>✨ Implementing and automating data pipelines with real-time processing</p>
-              <p>✨ Data processing & standardization using ML and NLP</p>
-              <p>✨ Data Migration across heterogeneous systems</p>
-            </div>
-            
-            <br>
-            <span class="text-dark">🛠️ Technical Focus:</span><br>
-            <div class="text-left ml-4">
-              <p>📊 Data Engineering <span class="text-success">(80%)</span></p>
-              <p>💻 Backend Development <span class="text-info">(10%)</span></p>
-              <p>🔄 DevOps <span class="text-warning">(5%)</span></p>
-              <p>🤖 GenAI <span class="text-danger">(5%)</span></p>
-            </div>
-            
-            <br>
-            <span class="text-muted">I'm passionate about solving complex data challenges and building robust, scalable solutions. Currently working at <span class="text-primary">Walmart Global Tech</span> where I focus on fraud detection and healthcare data platforms. 🌟</span>
-            
-            <br><br>
-            <div class="mt-4">
-              <a href="https://www.linkedin.com/in/kuldeep27396/" class="btn btn-primary m-2">
-                <i class="ti-linkedin mr-2"></i>LinkedIn
-              </a>
-              <a href="https://github.com/kuldeep27396" class="btn btn-dark m-2">
-                <i class="ti-github mr-2"></i>GitHub
-              </a>
-            </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-  <!-- /about -->
-<!-- /about -->
-
-<!-- skills -->
-<!-- skills -->
-<div id="skills">
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">Skills</h2>
-        </div>
-        
-        <!-- Programming -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-              <div class="wave" data-progress="90%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Programming</h4>
-              <p class="text-muted small">Python, PySpark, SQL, Scala, Java(Spring-Boot)</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Big Data -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-              <div class="wave" data-progress="85%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Big Data</h4>
-              <p class="text-muted small">Spark, Hadoop, Hive, ETL, Pandas, Numpy, CRUD API, Kafka, Airflow</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Cloud -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-              <div class="wave" data-progress="80%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Cloud</h4>
-              <p class="text-muted small">AWS-S3, EMR, Athena, Redshift, GCP-BigQuery, BigTable, DataProc, Vertex AI</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Databases -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-              <div class="wave" data-progress="75%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Databases</h4>
-              <p class="text-muted small">BigQuery, ElasticSearch, Azure SQL Server, MySQL, MongoDB</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Tools/CICD -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-              <div class="wave" data-progress="70%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Tools/CICD</h4>
-              <p class="text-muted small">Jupyter, DataBricks, Tableau, Git, Jenkins, Docker, Kubernetes, GenAI (LLM, GPT)</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Data Engineering -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-              <div class="wave" data-progress="85%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Data Engineering</h4>
-              <p class="text-muted small">ETL, Data Modeling, Data Warehousing, Data Lakes, Real-time Processing</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Streaming -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-              <div class="wave" data-progress="75%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Streaming</h4>
-              <p class="text-muted small">Kafka, Spark Structured Streaming, Real-time Analytics</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Soft Skills -->
-        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-              <div class="wave" data-progress="80%"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">Soft Skills</h4>
-              <p class="text-muted small">Collaboration, Teamwork, Problem-Solving, Stakeholder Management</p>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-  </div>
-  <!-- /skills -->
-<!-- /skills -->
-
-<!-- experience -->
-<!-- experience -->
-<div id="exp">
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h2 class="section-title">Experience</h2>
-        </div>
-        
-        <div class="col-lg-10">
-          <div class="experience-timeline">
-            <div class="experience-item">
-              <div class="experience-icon">
-                <img src="images/experience/walmart-logo.svg" alt="Walmart" class="experience-logo">
-              </div>
-              <div class="experience-content">
-                <h4 class="experience-title">Walmart Global Tech</h4>
-                <p class="experience-duration">June 2022 - Present</p>
-                <div class="experience-skills">
-                  <span class="badge badge-primary">PySpark</span>
-                  <span class="badge badge-info">Kafka</span>
-                  <span class="badge badge-success">BigQuery</span>
-                  <span class="badge badge-danger">Elasticsearch</span>
-                  <span class="badge badge-warning">Airflow</span>
-                  <span class="badge badge-primary">Spring Boot</span>
-                  <span class="badge badge-info">GenAI</span>
-                  <span class="badge badge-success">Java</span>
-                  <span class="badge badge-danger">Scala</span>
-                  <span class="badge badge-warning">Docker</span>
-                  <span class="badge badge-primary">Kubernetes</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="experience-item">
-              <div class="experience-icon">
-                <img src="images/experience/zs-logo.png" alt="ZS Associates" class="experience-logo">
-              </div>
-              <div class="experience-content">
-                <h4 class="experience-title">ZS Associates</h4>
-                <p class="experience-duration">September 2021 - June 2022</p>
-                <div class="experience-skills">
-                  <span class="badge badge-primary">AWS EMR</span>
-                  <span class="badge badge-info">Hive</span>
-                  <span class="badge badge-success">PySpark</span>
-                  <span class="badge badge-danger">SQL</span>
-                  <span class="badge badge-warning">Airflow</span>
-                  <span class="badge badge-primary">Data Modeling</span>
-                  <span class="badge badge-info">AWS S3</span>
-                  <span class="badge badge-success">Entity Resolution</span>
-                  <span class="badge badge-danger">Data Warehousing</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="experience-item">
-              <div class="experience-icon">
-                <img src="images/experience/tcs-logo.png" alt="TCS" class="experience-logo">
-              </div>
-              <div class="experience-content">
-                <h4 class="experience-title">Tata Consultancy Services</h4>
-                <p class="experience-duration">September 2018 - September 2021</p>
-                <p class="experience-clients">Clients: Morgan Stanley, Nassau RE</p>
-                <div class="experience-skills">
-                  <span class="badge badge-primary">AWS Glue</span>
-                  <span class="badge badge-info">Python</span>
-                  <span class="badge badge-success">Redshift</span>
-                  <span class="badge badge-danger">Lambda</span>
-                  <span class="badge badge-warning">Athena</span>
-                  <span class="badge badge-primary">Shell Scripts</span>
-                  <span class="badge badge-info">Tableau</span>
-                  <span class="badge badge-success">Computer Vision</span>
-                  <span class="badge badge-danger">ETL</span>
-                  <span class="badge badge-warning">SQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-  
-  <style>
-  .experience-timeline {
-    position: relative;
-    padding-left: 40px;
-  }
-  
-  .experience-timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #4A00E0;
-  }
-  
-  .experience-item {
-    position: relative;
-    padding-left: 60px;
-    margin-bottom: 50px;
-  }
-  
-  .experience-item::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border: 4px solid #4A00E0;
-    border-radius: 50%;
-  }
-  
-  .experience-icon {
-    position: absolute;
-    top: 0;
-    left: -60px;
-    width: 60px;
-    height: 60px;
-    background-color: #f8f9fa;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .experience-logo {
-    max-width: 50px;
-    max-height: 50px;
-  }
-  
-  .experience-content {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  }
-  
-  .experience-title {
-    color: #4A00E0;
-    margin-bottom: 8px;
-  }
-  
-  .experience-duration {
-    color: #6c757d;
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-  }
-  
-  .experience-clients {
-    color: #6c757d;
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-  }
-  
-  .experience-skills .badge {
-    margin-right: 8px;
-    margin-bottom: 8px;
-  }
-  
-  .badge-primary { background-color: #4A00E0; color: #fff; }
-  .badge-info { background-color: #17a2b8; color: #fff; }
-  .badge-success { background-color: #28a745; color: #fff; }
-  .badge-danger { background-color: #dc3545; color: #fff; }
-  .badge-warning { background-color: #ffc107; color: #212529; }
-  </style>
-<!-- ./experience -->
-
-<!-- education -->
-<!-- education -->
-<section class="section position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center mb-5">
-        <h2 class="section-title">Education</h2>
-      </div>
-      
-      <div class="col-lg-12">
-        <div class="card shadow-lg border-0 rounded-lg">
-          <div class="card-body p-5">
-            <div class="row align-items-center">
-              <!-- Education Icon -->
-              <div class="col-md-3 text-center">
-                <div class="education-logo-container mb-4">
-                  <div class="scholar-hat-icon">
-                    <i class="ti-crown" style="font-size: 80px; color: #007bff; background: -webkit-linear-gradient(45deg, #007bff, #00ff88);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));"></i>
-                    <div class="graduation-cap mt-2">
-                      <i class="ti-medall" style="font-size: 40px; color: #6c757d;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Education Details -->
-              <div class="col-md-9">
-                <div class="education-content">
-                  <h3 class="text-primary mb-3">Bachelor of Engineering (Honours)</h3>
-                  <h4 class="text-dark mb-3">Computer Science Engineering</h4>
-                  
-                  <div class="education-details mb-4">
-                    <p class="mb-2">
-                      <i class="ti-university text-primary mr-2"></i>
-                      <span class="font-weight-bold">Institution:</span>
-                      <span class="text-dark">Shri Vaishnav Institute of Technology and Science</span>
-                    </p>
-                    
-                    <p class="mb-2">
-                      <i class="ti-location-pin text-primary mr-2"></i>
-                      <span class="font-weight-bold">Location:</span>
-                      <span class="text-dark">Indore, Madhya-Pradesh, India</span>
-                    </p>
-                    
-                    <p class="mb-2">
-                      <i class="ti-calendar text-primary mr-2"></i>
-                      <span class="font-weight-bold">Duration:</span>
-                      <span class="text-dark">July 2014 - July 2018</span>
-                    </p>
-                    
-                  </div>
-                  
-                  <!-- Achievements -->
-                  <div class="achievements">
-                    <h5 class="text-primary mb-3">Key Achievement</h5>
-                    <div class="achievement-item bg-light p-3 rounded">
-                      <i class="ti-cup text-warning mr-2"></i>
-                      <span class="text-dark">GATE CSE (2019-2020)</span>
-                      <span class="badge badge-success ml-2">90 percentile</span>
-                      <p class="text-muted mb-0 small">Conducted by IIT-D National Exam</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Background Elements -->
-  <div class="edu-bg-elements">
-    <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
-    <div class="decoration-blob blob1 bg-primary"></div>
-    <div class="decoration-blob blob2 bg-info"></div>
-  </div>
-
-  <style>
-    .education-logo-container {
-      transition: transform 0.3s ease;
-    }
-    .education-logo-container:hover {
-      transform: scale(1.05);
-    }
-    .scholar-hat-icon {
+    .project-body {
       padding: 30px;
-      border-radius: 50%;
-      background: white;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-    .scholar-hat-icon:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-    .decoration-blob {
-      position: absolute;
-      opacity: 0.1;
-      border-radius: 50%;
-      z-index: -1;
-    }
-    .blob1 {
-      width: 200px;
-      height: 200px;
-      top: -50px;
-      right: 10%;
-    }
-    .blob2 {
-      width: 150px;
-      height: 150px;
-      bottom: 50px;
-      left: 10%;
-    }
-    .achievement-item {
-      transition: all 0.3s ease;
-    }
-    .achievement-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-  </style>
-</section>
-<!-- /education -->
-<!-- /education -->
-<!-- /education -->
-
-<!-- services 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Services</h2>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card hover-shadow shadow">
-          <div class="card-body text-center px-4 py-5">
-            <i class="ti-palette icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">UI Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card active-bg-primary hover-shadow shadow">
-          <div class="card-body text-center px-4 py-5">
-            <i class="ti-vector icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">UX Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card hover-shadow shadow">
-          <div class="card-body text-center px-4 py-5">
-            <i class="ti-panel icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">Interaction Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /services -->
-
-<!-- portfolio -->
-<div id="Projects">
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">Personal Projects</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="ti-wallet project-icon"></i>
-              <h4 class="project-title">SplitKro</h4>
-            </div>
-            <p class="project-description">A robust expense sharing application built with Spring Boot, designed to help users manage shared expenses easily and efficiently.</p>
-            <div class="project-footer">
-              <div class="tech-badges">
-                <span class="badge badge-java">Java</span>
-                <span class="badge badge-springboot">Spring Boot</span>
-                <span class="badge badge-backend">Backend</span>
-                <span class="badge badge-web">Web App</span>
-              </div>
-              <a href="https://github.com/kuldeep27396/SplitKro" class="btn btn-sm btn-outline-primary">
-                <i class="ti-github mr-2"></i>View Project
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="ti-bolt project-icon"></i>
-              <h4 class="project-title">Real-time Streaming Pipeline</h4>
-            </div>
-            <p class="project-description">Built a real-time content popularity tracker using Kafka and Flink for streaming data processing.</p>
-            <div class="project-footer">
-              <div class="tech-badges">
-                <span class="badge badge-kafka">Kafka</span>
-                <span class="badge badge-flink">Flink</span>
-                <span class="badge badge-stream">Streaming</span>
-                <span class="badge badge-data">Data Processing</span>
-              </div>
-              <a href="https://github.com/kuldeep27396/realtime-streaming-pipeline" class="btn btn-sm btn-outline-primary">
-                <i class="ti-github mr-2"></i>View Project
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="ti-bar-chart project-icon"></i>
-              <h4 class="project-title">Real-time OLAP</h4>
-            </div>
-            <p class="project-description">Developed a real-time analytics pipeline with Kafka and Pinot for efficient data querying.</p>
-            <div class="project-footer">
-              <div class="tech-badges">
-                <span class="badge badge-kafka">Kafka</span>
-                <span class="badge badge-pinot">Pinot</span>
-                <span class="badge badge-analytics">OLAP</span>
-                <span class="badge badge-query">Real-time Query</span>
-              </div>
-              <a href="https://github.com/kuldeep27396/realtime-olap" class="btn btn-sm btn-outline-primary">
-                <i class="ti-github mr-2"></i>View Project
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="project-card">
-            <div class="project-header">
-              <i class="ti-magic-alt project-icon"></i>
-              <h4 class="project-title">GenAI Projects</h4>
-            </div>
-            <p class="project-description">
-              I have worked for <span style="color: #4A00E0;">text-to-SQL conversion</span> with OpenAI integration. I also worked with <span style="color: #8E2DE2;">synthetic data generation</span> with LLM.
-            </p>
-            <div class="project-footer">
-              <div class="tech-badges">
-                <span class="badge badge-python">Python</span>
-                <span class="badge badge-openai">OpenAI</span>
-                <span class="badge badge-sql">SQL</span>
-                <span class="badge badge-ml">Transformer</span>
-                <span class="badge badge-llm">LLM</span>
-                <span class="badge badge-ai">AI</span>
-              </div>
-              <a href="https://github.com/kuldeep27396/text2sql-converter" class="btn btn-sm btn-outline-primary">
-                <i class="ti-github mr-2"></i>View Project
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  </div>
-  
-  <style>
-  .project-card {
-    border: 1px solid #e9ecef;
-    border-radius: 10px;
-    padding: 20px;
-    transition: all 0.3s ease;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .project-icon {
-    font-size: 2.2rem;
-    margin-right: 15px;
-    background: linear-gradient(135deg, #4A00E0, #8E2DE2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .project-title {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #333;
-  }
-  
-  .project-description {
-    color: #6c757d;
-    margin-bottom: 15px;
-  }
-  
-  .project-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .tech-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  
-  .badge {
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .badge:hover {
-    transform: translateY(-2px);
-  }
-  
-  .badge-java { background-color: #E76F00; color: white; }
-  .badge-springboot { background-color: #6DB33F; color: white; }
-  .badge-backend { background-color: #00ACC1; color: white; }
-  .badge-web { background-color: #673AB7; color: white; }
-  .badge-kafka { background-color: #231F20; color: white; }
-  .badge-flink { background-color: #E6526F; color: white; }
-  .badge-stream { background-color: #0078D4; color: white; }
-  .badge-data { background-color: #7D4698; color: white; }
-  .badge-kafka { background-color: #231F20; color: white; }
-  .badge-pinot { background-color: #2C63A8; color: white; }
-  .badge-analytics { background-color: #F9A825; color: white; }
-  .badge-query { background-color: #00BCD4; color: white; }
-  .badge-python { background-color: #3776AB; color: white; }
-  .badge-openai { background-color: #10A37F; color: white; }
-  .badge-sql { background-color: #4479A1; color: white; }
-  .badge-ml { background-color: #FF6F61; color: white; }
-  .badge-llm { background-color: #9C27B0; color: white; }
-  .badge-ai { background-color: #673AB7; color: white; }
-  
-  .project-card.genai-project {
-    border: 1px solid #e9ecef;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  .genai-project-content {
-    margin-bottom: 15px;
-  }
-  
-  .genai-project-item {
-    margin-bottom: 10px;
-    padding: 12px 16px;
-    background: rgba(255,255,255,0.8);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  
-  .genai-project-item:hover {
-    background: white;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-  }
-  
-  .genai-project-subtitle {
-    margin-bottom: 5px;
-    color: #4A00E0;
-    font-size: 1.1rem;
-  }
-  
-  .genai-project-description {
-    color: #6c757d;
-    font-size: 0.9rem;
-    margin-bottom: 0;
-    font-weight: 500;
-  }
-  </style>
-<!-- /portfolio -->
-
-<!-- testimonial -->
-<!-- testimonial -->
-<section class="section bg-primary position-relative testimonial-bg-shapes">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title text-white mb-5">Recommendations</h2>
-      </div>
-      <div class="col-lg-10 mx-auto testimonial-slider" data-slider-settings='{"autoplay": true, "autoplaySpeed": 5000, "arrows": false, "dots": true, "pauseOnHover": true}'>
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">I had the chance to work with Kuldeep for almost 6 months in TCS, collaborating in a sales and trading, middle office, production support project. It's rare that you come across a standout talent like Kuldeep. He has sound technical knowledge and is always keen to learn new things.</p>
-          <div class="avatar-circle mb-4">
-            <i class="ti-user"></i>
-          </div>
-          <h4 class="text-white">Srisakhi Sengupta</h4>
-          <h6 class="text-light mb-4">Senior Manager at Morgan Stanley</h6>
-        </div>
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">I have had the pleasure of working closely with Kuldeep for over a year at TCS, where he has consistently demonstrated exceptional expertise in Big Data Analytics, Programming (Python) and Cloud technologies. His ability to adapt to new technologies and methodologies has been instrumental in delivering high-quality solutions to complex business challenges.</p>
-          <div class="avatar-circle mb-4">
-            <i class="ti-user"></i>
-          </div>
-          <h4 class="text-white">Payal Ghosal</h4>
-          <h6 class="text-light mb-4">Financial Analyst at Siemens</h6>
-        </div>
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">Kuldeep is an excellent resource, and a master at Data Engineering. He is dedicated, hard and smart worker with an easiness to build interpersonal relations. He is always capable of adapting new work environments and is a quick learner with excellent fundamentals.</p>
-          <div class="avatar-circle mb-4">
-            <i class="ti-user"></i>
-          </div>
-          <h4 class="text-white">Sundarm Soni</h4>
-          <h6 class="text-light mb-4">SDE-III at Morgan Stanley</h6>
-        </div>
-        
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">Kuldeep was an outstanding student who consistently demonstrated exceptional skills and knowledge. His excellent communication skills, strong work ethic, and ability to work well under pressure have made him a valuable professional. He is a team player who is always willing to collaborate.</p>
-          <div class="avatar-circle mb-4">
-            <i class="ti-user"></i>
-          </div>
-          <h4 class="text-white">Rahul Patel</h4>
-          <h6 class="text-light mb-4">Faculty at Sunstone</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- bg shapes -->
-  <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
-  <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
-  <img src="images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2">
-  <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
-  <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
-  <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
-
-  <style>
-    .avatar-circle {
-      width: 80px;
-      height: 80px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .avatar-circle i {
-      font-size: 35px;
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .testimonial-content:hover .avatar-circle {
-      background: rgba(255, 255, 255, 0.3);
-      transform: scale(1.05);
-      transition: all 0.3s ease;
-    }
-
-    .slick-dots {
-      bottom: -50px;
-    }
-
-    .slick-dots li button:before {
-      color: white;
-    }
-
-    .slick-dots li.slick-active button:before {
-      color: white;
-    }
-  </style>
-
-  <script>
-    $(document).ready(function(){
-      $('.testimonial-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        dots: true,
-        arrows: false,
-        pauseOnHover: true,
-        fade: true,
-        speed: 1000
-      });
-    });
-  </script>
-</section>
-<!-- /testimonial -->
-<!-- /testimonial -->
-
-<!-- client logo slider -->
-<!-- client/technology logo slider -->
-<section class="section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title mb-5">Technologies & Tools</h2>
-      </div>
-    </div>
-    <div class="logo-slider-container">
-      <div class="logo-slide-track">
-        <!-- First Set of Logos -->
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Apache Airflow">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google-cloud-platform.svg" alt="Google Cloud Platform">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apache_kafka.svg" alt="Apache Kafka">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="Elasticsearch">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" alt="Hadoop">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" alt="Scala">
-        </div>
-
-        <!-- Duplicate Set for Continuous Loop -->
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Apache Airflow">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Google-cloud-platform.svg" alt="Google Cloud Platform">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_kafka_logo_icon_167866.png" alt="Apache Kafka">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="Elasticsearch">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" alt="Hadoop">
-        </div>
-        <div class="logo-container">
-          <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" alt="Scala">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    .logo-slider-container {
-      background: white;
-      height: 100px;
-      margin: auto;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-    }
-
-    .logo-slide-track {
-      animation: scroll 40s linear infinite;
+      flex-grow: 1;
       display: flex;
-      width: calc(200px * 24); /* Adjust based on number of logos */
+      flex-direction: column;
     }
 
-    .logo-container {
-      height: 100px;
-      width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px;
+    .project-description {
+      color: var(--text-light);
+      margin-bottom: 20px;
+      flex-grow: 1;
     }
 
-    .tech-logo {
-      max-height: 60px;
-      max-width: 120px;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-
-    .logo-container:hover .tech-logo {
-      transform: scale(1.1);
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(calc(-200px * 12)); /* Adjust based on number of original logos */
-      }
-    }
-
-    .logo-slider-container:hover .logo-slide-track {
-      animation-play-state: paused;
-    }
-
-    @media (max-width: 768px) {
-      .logo-container {
-        width: 150px;
-      }
-      .tech-logo {
-        max-height: 50px;
-        max-width: 100px;
-      }
-    }
-  </style>
-</section>
-<!-- /client logo slider -->
-<!-- /client logo slider -->
-
-<!-- blog -->
-<!-- blog section -->
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h2 class="section-title display-4 mb-5">Blogs & Articles</h2>
-      </div>
-      
-      <!-- Newsletter Card -->
-      <div class="col-12 mb-5">
-        <div class="newsletter-card text-center p-5 rounded">
-          <i class="ti-light-bulb text-white mb-3" style="font-size: 2.5rem;"></i>
-          <h2 class="text-white mb-3">Subscribe to My Newsletter</h2>
-          <p class="text-white mb-4">Stay updated with my latest insights on Data Engineering, Cloud, and Big Data</p>
-          <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=6983848189787271168" 
-             class="newsletter-btn">
-            <i class="ti-linkedin mr-2"></i>Subscribe On LinkedIn
-          </a>
-        </div>
-      </div>
-
-      <!-- Platform Links -->
-      <div class="col-12 text-center">
-        <div class="platform-links">
-          <a href="https://medium.com/@kuldeep27396" class="platform-badge medium">
-            <i class="ti-pencil-alt mr-2"></i>Medium
-          </a>
-          <a href="https://www.linkedin.com/in/kuldeep27396/recent-activity/posts/" class="platform-badge linkedin">
-            <i class="ti-linkedin mr-2"></i>LinkedIn Articles
-          </a>
-          <a href="https://www.analyticsvidhya.com/blog/author/kuldeep27396/" class="platform-badge analytics">
-            <i class="ti-stats-up mr-2"></i>Analytics Vidhya
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    .newsletter-card {
-      background: linear-gradient(135deg, #5E3BE0 0%, #4A00E0 100%);
-      box-shadow: 0 10px 30px rgba(74, 0, 224, 0.15);
-    }
-
-    .newsletter-btn {
-      background: white;
-      color: #4A00E0;
-      padding: 12px 30px;
-      border-radius: 30px;
+    .project-link {
+      color: var(--primary-color);
       font-weight: 600;
+      text-decoration: none;
       display: inline-flex;
       align-items: center;
       transition: all 0.3s ease;
-      text-decoration: none;
     }
 
-    .newsletter-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      text-decoration: none;
-      color: #4A00E0;
+    .project-link:hover {
+      gap: 8px;
+      color: var(--secondary-color);
     }
 
-    .platform-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
+    /* Contact Section */
+    .contact-section {
+      background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
     }
 
-    .platform-badge {
-      padding: 12px 25px;
-      border-radius: 25px;
-      font-weight: 500;
-      display: inline-flex;
-      align-items: center;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: white;
-    }
-
-    .platform-badge.medium {
-      background: #12100E;
-    }
-
-    .platform-badge.linkedin {
-      background: #0077B5;
-    }
-
-    .platform-badge.analytics {
-      background: #2962FF;
-    }
-
-    .platform-badge:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-      text-decoration: none;
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      .platform-links {
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .platform-badge {
-        width: 200px;
-        justify-content: center;
-      }
-    }
-  </style>
-</section>
-<!-- /blog section -->
-<!-- /blog -->
-
-<!-- contact -->
-<!-- contact -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Get In Touch</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down mb-5">
-          <div class="contact-form-header mb-4">
-            <i class="ti-email text-primary" style="font-size: 2.5rem;"></i>
-            <h4 class="mt-3 mb-2">Send me a Hi..!</h4>
-          </div>
-
-          <form action="https://formspree.io/f/mdownbaw" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control px-0 mb-4" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6">
-              <input type="email" name="email" class="form-control px-0 mb-4" placeholder="Email Address" required>
-            </div>
-            <div class="col-12">
-              <textarea name="message" class="form-control px-0 mb-4" placeholder="Type Message Here" required></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- footer -->
-<footer class="bg-dark">
-  <div class="section py-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Quick Links -->
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="footer-links d-flex justify-content-center justify-content-md-start">
-            <a href="#about" class="text-white-50 mx-2">About</a>
-            <a href="#Projects" class="text-white-50 mx-2">Projects</a>
-            <a href="#blog" class="text-white-50 mx-2">Blog</a>
-          </div>
-        </div>
-
-        <!-- Location Badge -->
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <div class="location-badge mx-auto">
-            <i class="ti-location-pin location-icon"></i>
-            <span class="location-text">Made with ❤️ in India</span>
-          </div>
-        </div>
-
-        <!-- Social Links -->
-        <div class="col-md-4">
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/kuldeep27396" class="social-link" title="LinkedIn">
-              <i class="ti-linkedin"></i>
-            </a>
-            <a href="https://github.com/kuldeep27396" class="social-link" title="GitHub">
-              <i class="ti-github"></i>
-            </a>
-            <a href="https://twitter.com/kuldeep27396" class="social-link" title="Twitter">
-              <i class="ti-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="row mt-3">
-        <div class="col-12 text-center">
-          <p class="text-white-50 mb-0 copyright-text">
-            © <span id="copyright-year"></span> Kuldeep Pal | Data Engineer
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    footer {
-      background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
-    }
-
-    .footer-links a {
-      text-decoration: none;
-      transition: color 0.3s ease;
-      font-size: 0.9rem;
-    }
-
-    .footer-links a:hover {
-      color: white !important;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 15px;
-      justify-content: flex-end;
-    }
-
-    .social-link {
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      color: white;
-      transition: all 0.3s ease;
-      font-size: 0.9rem;
-    }
-
-    .social-link:hover {
-      background: var(--primary);
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    .location-badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 15px;
-      background: rgba(255, 255, 255, 0.05);
+    .contact-card {
+      background: var(--bg-white);
+      padding: 50px;
       border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
     }
 
-    .location-badge:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-2px);
-    }
-
-    .location-icon {
-      color: var(--primary);
-      margin-right: 8px;
-      font-size: 1rem;
-    }
-
-    .location-text {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 0.85rem;
-    }
-
-    .copyright-text {
-      font-size: 0.85rem;
-    }
-
-    /* Contact Form Styles */
     .form-control {
-      border: none;
-      border-bottom: 1px solid #ddd;
-      border-radius: 0;
-      padding: 15px 0;
-      font-size: 14px;
+      border: 2px solid var(--border-light);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 1rem;
       transition: all 0.3s ease;
     }
 
     .form-control:focus {
-      box-shadow: none;
-      border-color: var(--primary);
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      outline: none;
     }
 
-    .btn-primary {
-      padding: 12px 35px;
-      border-radius: 30px;
+    .btn-submit {
+      background: var(--primary-color);
+      color: white;
+      padding: 14px 40px;
+      border-radius: 50px;
+      border: none;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
     }
 
-    .btn-primary:hover {
+    .btn-submit:hover {
       transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    /* Tech Logo Cards */
+    .tech-logo-card {
+      background: var(--bg-white);
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tech-logo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .tech-logo-card img {
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+    }
+
+    .tech-logo-card:hover img {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .social-link {
+      width: 45px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      background: var(--primary-color);
+      transform: translateY(-5px);
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 3rem;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+      }
+
+      .timeline-marker {
+        left: 20px;
+      }
     }
 
     @media (max-width: 768px) {
-      .social-links {
-        justify-content: center;
-        margin-top: 15px;
+      .hero-title {
+        font-size: 2.5rem;
       }
-      
-      .footer-links {
-        justify-content: center;
-        margin-bottom: 15px;
+
+      .btn-secondary-custom {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
       }
     }
   </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KP</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 hero-content">
+          <div class="hero-badge">👋 Hello, I'm Kuldeep Pal</div>
+          <h1 class="hero-title">Data Engineer & Cloud Architect</h1>
+          <p class="hero-subtitle">Building scalable data solutions at Walmart Global Tech</p>
+          <p class="hero-description">
+            Passionate about transforming complex data challenges into elegant solutions.
+            With 7+ years of experience in Big Data, Cloud Technologies, and Machine Learning,
+            I help organizations unlock the power of their data.
+          </p>
+          <div>
+            <a href="#contact" class="btn-primary-custom">Get In Touch</a>
+            <a href="#projects" class="btn-secondary-custom">View Work</a>
+          </div>
+          <div class="hero-skills">
+            <span class="skill-tag">PySpark</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Kafka</span>
+            <span class="skill-tag">BigQuery</span>
+            <span class="skill-tag">GenAI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            A data engineer who loves solving complex problems and building robust, scalable solutions
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="about-card">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
+              I'm a passionate Data Engineer with 7+ years of experience in Big Data Analytics and Cloud Technologies.
+              Throughout my journey, I've worked across diverse domains including Capital Markets, Insurance, FinTech,
+              Pharmaceutical, Healthcare, and Retail/E-commerce.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light); margin-top: 20px;">
+              Currently at Walmart Global Tech, I focus on fraud detection and healthcare data platforms,
+              implementing cutting-edge solutions using Big Data, Cloud, and AI technologies. I'm dedicated to
+              building scalable data warehouses, automating pipelines, and leveraging ML/NLP for data processing.
+            </p>
+            <div style="margin-top: 30px;">
+              <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 15px;">Core Expertise</h4>
+              <ul style="list-style: none; padding: 0;">
+                <li style="padding: 8px 0; color: var(--text-light);">✨ Building scalable data warehouses & data lakes</li>
+                <li style="padding: 8px 0; color: var(--text-light);">✨ Real-time data pipeline automation</li>
+                <li style="padding: 8px 0; color: var(--text-light);">✨ ML & NLP for data processing</li>
+                <li style="padding: 8px 0; color: var(--text-light);">✨ Data migration across heterogeneous systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="stat-box">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-box" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-box" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Industry Domains</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">What I Do</h2>
+          <p class="section-subtitle">
+            Specialized data engineering services to transform your data infrastructure
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="height: 100%; border-left: 4px solid var(--primary-color);">
+            <div style="width: 60px; height: 60px; background: rgba(59, 130, 246, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <i class="ti-server" style="font-size: 1.8rem; color: var(--primary-color);"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 15px;">Data Platform Engineering</h4>
+            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">
+              Design and build scalable data platforms using modern cloud technologies. Create robust data lakes and warehouses optimized for performance and cost.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(59, 130, 246, 0.1); color: var(--primary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">BigQuery</span>
+              <span style="background: rgba(59, 130, 246, 0.1); color: var(--primary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Redshift</span>
+              <span style="background: rgba(59, 130, 246, 0.1); color: var(--primary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">S3</span>
+              <span style="background: rgba(59, 130, 246, 0.1); color: var(--primary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Databricks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="height: 100%; border-left: 4px solid var(--secondary-color);">
+            <div style="width: 60px; height: 60px; background: rgba(139, 92, 246, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <i class="ti-loop" style="font-size: 1.8rem; color: var(--secondary-color);"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 15px;">Real-time Data Pipelines</h4>
+            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">
+              Build streaming data pipelines that process millions of events per second. Implement real-time analytics and monitoring solutions.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(139, 92, 246, 0.1); color: var(--secondary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Kafka</span>
+              <span style="background: rgba(139, 92, 246, 0.1); color: var(--secondary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Flink</span>
+              <span style="background: rgba(139, 92, 246, 0.1); color: var(--secondary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Spark Streaming</span>
+              <span style="background: rgba(139, 92, 246, 0.1); color: var(--secondary-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Pinot</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="height: 100%; border-left: 4px solid var(--accent-color);">
+            <div style="width: 60px; height: 60px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <i class="ti-panel" style="font-size: 1.8rem; color: var(--accent-color);"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 15px;">ETL/ELT Development</h4>
+            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">
+              Create efficient data transformation pipelines. Automate data workflows with proper monitoring, alerting, and orchestration.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Airflow</span>
+              <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">PySpark</span>
+              <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">dbt</span>
+              <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="height: 100%; border-left: 4px solid #10B981;">
+            <div style="width: 60px; height: 60px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <i class="ti-stats-up" style="font-size: 1.8rem; color: #10B981;"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 15px;">ML/AI Data Solutions</h4>
+            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">
+              Implement GenAI and ML pipelines for data processing. Build feature stores and model serving infrastructure for production ML systems.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">OpenAI</span>
+              <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Vertex AI</span>
+              <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">LangChain</span>
+              <span style="background: rgba(16, 185, 129, 0.1); color: #10B981; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">LLM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="height: 100%; border-left: 4px solid #F59E0B;">
+            <div style="width: 60px; height: 60px; background: rgba(245, 158, 11, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <i class="ti-layers" style="font-size: 1.8rem; color: #F59E0B;"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 15px;">Data Architecture & Modeling</h4>
+            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">
+              Design scalable data models and architectures. Implement data governance, quality frameworks, and master data management strategies.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Star Schema</span>
+              <span style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Medallion</span>
+              <span style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Data Vault</span>
+              <span style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Kimball</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="height: 100%; border-left: 4px solid #EF4444;">
+            <div style="width: 60px; height: 60px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <i class="ti-settings" style="font-size: 1.8rem; color: #EF4444;"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 15px;">DevOps & Infrastructure</h4>
+            <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 15px;">
+              Set up CI/CD pipelines for data platforms. Implement infrastructure as code and container orchestration for data workloads.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <span style="background: rgba(239, 68, 68, 0.1); color: #EF4444; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Docker</span>
+              <span style="background: rgba(239, 68, 68, 0.1); color: #EF4444; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Kubernetes</span>
+              <span style="background: rgba(239, 68, 68, 0.1); color: #EF4444; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Jenkins</span>
+              <span style="background: rgba(239, 68, 68, 0.1); color: #EF4444; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem;">Terraform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Expertise across the modern data engineering stack
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="ti-code"></i>
+            </div>
+            <h3 class="skill-title">Programming</h3>
+            <p class="skill-description">Python, PySpark, SQL, Scala, Java (Spring Boot)</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <i class="ti-server"></i>
+            </div>
+            <h3 class="skill-title">Big Data</h3>
+            <p class="skill-description">Spark, Hadoop, Hive, Kafka, Airflow, ETL Pipelines</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <i class="ti-cloud"></i>
+            </div>
+            <h3 class="skill-title">Cloud Platforms</h3>
+            <p class="skill-description">AWS (S3, EMR, Redshift), GCP (BigQuery, Vertex AI)</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+              <i class="ti-dashboard"></i>
+            </div>
+            <h3 class="skill-title">Databases</h3>
+            <p class="skill-description">BigQuery, Elasticsearch, MySQL, MongoDB, Redshift</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+              <i class="ti-package"></i>
+            </div>
+            <h3 class="skill-title">DevOps & Tools</h3>
+            <p class="skill-description">Docker, Kubernetes, Jenkins, Git, DataBricks</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+              <i class="ti-bolt"></i>
+            </div>
+            <h3 class="skill-title">Streaming</h3>
+            <p class="skill-description">Kafka, Spark Streaming, Real-time Analytics</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+              <i class="ti-stats-up"></i>
+            </div>
+            <h3 class="skill-title">ML & AI</h3>
+            <p class="skill-description">GenAI, LLM, GPT, Pandas, NumPy, NLP</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card">
+            <div class="skill-icon" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+              <i class="ti-layers"></i>
+            </div>
+            <h3 class="skill-title">Data Engineering</h3>
+            <p class="skill-description">Data Modeling, Warehousing, Lakes, ETL Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            My professional journey in data engineering
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <!-- Walmart -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="company-name">Walmart Global Tech</h3>
+            <p class="job-duration">June 2022 - Present | Senior Data Engineer</p>
+            <p style="color: var(--text-light); line-height: 1.7;">
+              Leading data engineering initiatives for fraud detection and healthcare platforms.
+              Building scalable data pipelines processing billions of records daily using PySpark,
+              Kafka, and BigQuery. Implementing GenAI solutions for data quality and automation.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">PySpark</span>
+              <span class="tech-badge">Kafka</span>
+              <span class="tech-badge">BigQuery</span>
+              <span class="tech-badge">Elasticsearch</span>
+              <span class="tech-badge">Airflow</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">GenAI</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZS Associates -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="company-name">ZS Associates</h3>
+            <p class="job-duration">September 2021 - June 2022 | Data Engineer</p>
+            <p style="color: var(--text-light); line-height: 1.7;">
+              Developed and maintained data warehousing solutions for pharmaceutical clients.
+              Implemented entity resolution systems and data modeling frameworks using AWS EMR,
+              Hive, and PySpark. Automated ETL workflows with Airflow.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">AWS EMR</span>
+              <span class="tech-badge">Hive</span>
+              <span class="tech-badge">PySpark</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">Airflow</span>
+              <span class="tech-badge">Data Modeling</span>
+              <span class="tech-badge">AWS S3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TCS -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3 class="company-name">Tata Consultancy Services</h3>
+            <p class="job-duration">September 2018 - September 2021 | Systems Engineer</p>
+            <p style="color: var(--text-light); line-height: 1.7;">
+              Worked on data engineering projects for Morgan Stanley and Nassau RE.
+              Built ETL pipelines using AWS Glue, created data visualization dashboards with Tableau,
+              and implemented computer vision solutions for document processing.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">AWS Glue</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Redshift</span>
+              <span class="tech-badge">Lambda</span>
+              <span class="tech-badge">Athena</span>
+              <span class="tech-badge">Tableau</span>
+              <span class="tech-badge">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Academic background and achievements
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="about-card">
+            <div class="row align-items-center">
+              <div class="col-md-2 text-center mb-4 mb-md-0">
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                  <i class="ti-medall" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h3 style="color: var(--primary-color); font-weight: 700; margin-bottom: 10px;">Bachelor of Engineering (Honours)</h3>
+                <h4 style="color: var(--text-dark); font-weight: 600; margin-bottom: 15px;">Computer Science Engineering</h4>
+
+                <p style="color: var(--text-light); margin-bottom: 8px;">
+                  <i class="ti-location-pin" style="color: var(--primary-color); margin-right: 8px;"></i>
+                  Shri Vaishnav Institute of Technology and Science, Indore, India
+                </p>
+
+                <p style="color: var(--text-light); margin-bottom: 15px;">
+                  <i class="ti-calendar" style="color: var(--primary-color); margin-right: 8px;"></i>
+                  July 2014 - July 2018
+                </p>
+
+                <div style="background: rgba(59, 130, 246, 0.1); padding: 15px; border-radius: 10px; margin-top: 20px;">
+                  <p style="margin-bottom: 5px; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-cup" style="color: #F59E0B; margin-right: 8px;"></i>
+                    Key Achievement: GATE CSE (2019-2020)
+                  </p>
+                  <p style="margin-bottom: 0; color: var(--text-light); font-size: 0.95rem;">
+                    Scored 90 percentile in the national level exam conducted by IIT-D
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">
+            Continuous learning and professional development
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="text-align: center; height: 100%;">
+            <div style="width: 80px; height: 80px; background: rgba(239, 68, 68, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <i class="ti-crown" style="font-size: 2.5rem; color: #EF4444;"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 10px;">GATE CSE</h4>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px;">IIT Delhi</p>
+            <div style="background: rgba(239, 68, 68, 0.1); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+              <span style="color: #EF4444; font-weight: 600;">90 Percentile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="text-align: center; height: 100%;">
+            <div style="width: 80px; height: 80px; background: rgba(59, 130, 246, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <i class="ti-shield" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 10px;">AWS Certified</h4>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px;">Solutions Architect</p>
+            <div style="background: rgba(59, 130, 246, 0.1); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+              <span style="color: var(--primary-color); font-weight: 600;">Associate Level</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="text-align: center; height: 100%;">
+            <div style="width: 80px; height: 80px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <i class="ti-medall" style="font-size: 2.5rem; color: #10B981;"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 10px;">GCP Certified</h4>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px;">Professional Data Engineer</p>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+              <span style="color: #10B981; font-weight: 600;">Professional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="text-align: center; height: 100%;">
+            <div style="width: 80px; height: 80px; background: rgba(139, 92, 246, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <i class="ti-bookmark-alt" style="font-size: 2.5rem; color: var(--secondary-color);"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 10px;">Databricks Certified</h4>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px;">Data Engineer</p>
+            <div style="background: rgba(139, 92, 246, 0.1); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+              <span style="color: var(--secondary-color); font-weight: 600;">Associate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="text-align: center; height: 100%;">
+            <div style="width: 80px; height: 80px; background: rgba(245, 158, 11, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <i class="ti-cup" style="font-size: 2.5rem; color: #F59E0B;"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 10px;">50+ Projects</h4>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px;">Successfully Delivered</p>
+            <div style="background: rgba(245, 158, 11, 0.1); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+              <span style="color: #F59E0B; font-weight: 600;">7+ Years</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="about-card" style="text-align: center; height: 100%;">
+            <div style="width: 80px; height: 80px; background: rgba(6, 182, 212, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+              <i class="ti-stats-up" style="font-size: 2.5rem; color: var(--accent-color);"></i>
+            </div>
+            <h4 style="color: var(--text-dark); font-weight: 700; margin-bottom: 10px;">6 Industries</h4>
+            <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px;">Domain Expertise</p>
+            <div style="background: rgba(6, 182, 212, 0.1); padding: 8px 20px; border-radius: 20px; display: inline-block;">
+              <span style="color: var(--accent-color); font-weight: 600;">Diverse Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Some of my personal projects and contributions
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><i class="ti-wallet"></i></div>
+              <h3 class="project-title">SplitKro</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                A robust expense sharing application built with Spring Boot, designed to help users
+                manage shared expenses easily and efficiently. Features real-time expense tracking,
+                automatic settlement calculation, and multi-currency support.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">Spring Boot</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/SplitKro" class="project-link">
+                View on GitHub <i class="ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="project-card">
+            <div class="project-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <div class="project-icon"><i class="ti-bolt"></i></div>
+              <h3 class="project-title">Real-time Streaming Pipeline</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Built a real-time content popularity tracker using Kafka and Flink for streaming
+                data processing. Processes millions of events per second with sub-second latency,
+                providing real-time analytics and insights.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-badge">Kafka</span>
+                <span class="tech-badge">Flink</span>
+                <span class="tech-badge">Streaming</span>
+                <span class="tech-badge">Real-time</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/realtime-streaming-pipeline" class="project-link">
+                View on GitHub <i class="ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="project-card">
+            <div class="project-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <div class="project-icon"><i class="ti-bar-chart"></i></div>
+              <h3 class="project-title">Real-time OLAP</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Developed a real-time analytics pipeline with Kafka and Pinot for efficient
+                data querying. Enables sub-second query response times on streaming data with
+                support for complex analytical queries.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-badge">Kafka</span>
+                <span class="tech-badge">Pinot</span>
+                <span class="tech-badge">OLAP</span>
+                <span class="tech-badge">Analytics</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/realtime-olap" class="project-link">
+                View on GitHub <i class="ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="project-card">
+            <div class="project-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+              <div class="project-icon"><i class="ti-magic-wand"></i></div>
+              <h3 class="project-title">GenAI Projects</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Implemented text-to-SQL conversion using OpenAI integration for natural language
+                database queries. Also developed synthetic data generation systems using LLMs for
+                testing and development purposes.
+              </p>
+              <div class="tech-stack mb-3">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">OpenAI</span>
+                <span class="tech-badge">LLM</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">Transformers</span>
+              </div>
+              <a href="https://github.com/kuldeep27396/text2sql-converter" class="project-link">
+                View on GitHub <i class="ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title" style="color: white;">Recommendations</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">
+            What colleagues say about working with me
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="testimonial-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-item" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: 20px; margin-bottom: 30px;">
+              <i class="ti-quote-right" style="font-size: 3rem; color: rgba(255,255,255,0.3); margin-bottom: 20px;"></i>
+              <p style="color: white; font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+                "I had the chance to work with Kuldeep for almost 6 months in TCS, collaborating in a sales and trading, middle office, production support project. It's rare that you come across a standout talent like Kuldeep. He has sound technical knowledge and is always keen to learn new things."
+              </p>
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <i class="ti-user" style="font-size: 1.5rem; color: white;"></i>
+                </div>
+                <div>
+                  <h5 style="color: white; margin-bottom: 5px;">Srisakhi Sengupta</h5>
+                  <p style="color: rgba(255,255,255,0.8); margin-bottom: 0; font-size: 0.9rem;">Senior Manager at Morgan Stanley</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-item" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: 20px; margin-bottom: 30px;">
+              <i class="ti-quote-right" style="font-size: 3rem; color: rgba(255,255,255,0.3); margin-bottom: 20px;"></i>
+              <p style="color: white; font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+                "I have had the pleasure of working closely with Kuldeep for over a year at TCS, where he has consistently demonstrated exceptional expertise in Big Data Analytics, Programming (Python) and Cloud technologies. His ability to adapt to new technologies and methodologies has been instrumental in delivering high-quality solutions to complex business challenges."
+              </p>
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <i class="ti-user" style="font-size: 1.5rem; color: white;"></i>
+                </div>
+                <div>
+                  <h5 style="color: white; margin-bottom: 5px;">Payal Ghosal</h5>
+                  <p style="color: rgba(255,255,255,0.8); margin-bottom: 0; font-size: 0.9rem;">Financial Analyst at Siemens</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-item" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 40px; border-radius: 20px; margin-bottom: 30px;">
+              <i class="ti-quote-right" style="font-size: 3rem; color: rgba(255,255,255,0.3); margin-bottom: 20px;"></i>
+              <p style="color: white; font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+                "Kuldeep is an excellent resource, and a master at Data Engineering. He is dedicated, hard and smart worker with an easiness to build interpersonal relations. He is always capable of adapting new work environments and is a quick learner with excellent fundamentals."
+              </p>
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                  <i class="ti-user" style="font-size: 1.5rem; color: white;"></i>
+                </div>
+                <div>
+                  <h5 style="color: white; margin-bottom: 5px;">Sundarm Soni</h5>
+                  <p style="color: rgba(255,255,255,0.8); margin-bottom: 0; font-size: 0.9rem;">SDE-III at Morgan Stanley</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section class="section" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Technologies & Tools</h2>
+          <p class="section-subtitle">
+            Technologies I work with on a daily basis
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Python</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Spark" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Apache Spark</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Airflow" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Airflow</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">AWS</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" alt="GCP" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Google Cloud</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apache_kafka.svg" alt="Kafka" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Kafka</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Elasticsearch_logo.svg" alt="Elasticsearch" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Elasticsearch</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">MongoDB</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Docker</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Kubernetes</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hadoop_logo_new.svg" alt="Hadoop" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Hadoop</p>
+            </div>
+            <div class="tech-logo-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" alt="Scala" style="height: 60px; object-fit: contain;">
+              <p style="margin-top: 10px; color: var(--text-dark); font-weight: 600;">Scala</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Common questions about working with me
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="about-card mb-3">
+              <div class="faq-header" style="cursor: pointer; padding: 20px;" onclick="toggleFaq('faq1')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h5 style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-help-alt" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    What is your approach to data engineering projects?
+                  </h5>
+                  <i class="ti-angle-down" id="faq1-icon" style="color: var(--primary-color); font-size: 1.2rem; transition: transform 0.3s ease;"></i>
+                </div>
+              </div>
+              <div id="faq1-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                <div style="padding: 0 20px 20px 20px; color: var(--text-light); line-height: 1.8;">
+                  I follow a structured approach: <br>
+                  <strong>1. Discovery:</strong> Understanding business requirements and data landscape<br>
+                  <strong>2. Design:</strong> Architecture design with scalability and cost in mind<br>
+                  <strong>3. Development:</strong> Agile development with iterative releases<br>
+                  <strong>4. Testing:</strong> Comprehensive testing including data quality checks<br>
+                  <strong>5. Deployment:</strong> CI/CD implementation with monitoring and alerts<br>
+                  <strong>6. Optimization:</strong> Continuous performance tuning and cost optimization
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="about-card mb-3">
+              <div class="faq-header" style="cursor: pointer; padding: 20px;" onclick="toggleFaq('faq2')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h5 style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-time" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    How long does a typical data engineering project take?
+                  </h5>
+                  <i class="ti-angle-down" id="faq2-icon" style="color: var(--primary-color); font-size: 1.2rem; transition: transform 0.3s ease;"></i>
+                </div>
+              </div>
+              <div id="faq2-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                <div style="padding: 0 20px 20px 20px; color: var(--text-light); line-height: 1.8;">
+                  Project timelines vary based on scope and complexity:<br><br>
+                  • <strong>Simple ETL Pipeline:</strong> 2-4 weeks<br>
+                  • <strong>Data Warehouse Setup:</strong> 1-3 months<br>
+                  • <strong>Real-time Streaming Platform:</strong> 2-4 months<br>
+                  • <strong>Complete Data Platform:</strong> 3-6 months<br><br>
+                  I provide detailed estimates after understanding your specific requirements during the discovery phase.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="about-card mb-3">
+              <div class="faq-header" style="cursor: pointer; padding: 20px;" onclick="toggleFaq('faq3')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h5 style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-cloud" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    Which cloud platforms do you specialize in?
+                  </h5>
+                  <i class="ti-angle-down" id="faq3-icon" style="color: var(--primary-color); font-size: 1.2rem; transition: transform 0.3s ease;"></i>
+                </div>
+              </div>
+              <div id="faq3-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                <div style="padding: 0 20px 20px 20px; color: var(--text-light); line-height: 1.8;">
+                  I have extensive experience with both AWS and GCP:<br><br>
+                  <strong>AWS:</strong> S3, EMR, Glue, Redshift, Athena, Lambda, Kinesis<br>
+                  <strong>GCP:</strong> BigQuery, Dataflow, Cloud Storage, Pub/Sub, Vertex AI, Dataproc<br><br>
+                  I can help you choose the right platform based on your requirements, budget, and existing infrastructure.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="about-card mb-3">
+              <div class="faq-header" style="cursor: pointer; padding: 20px;" onclick="toggleFaq('faq4')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h5 style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-thumb-up" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    Do you provide ongoing support after project completion?
+                  </h5>
+                  <i class="ti-angle-down" id="faq4-icon" style="color: var(--primary-color); font-size: 1.2rem; transition: transform 0.3s ease;"></i>
+                </div>
+              </div>
+              <div id="faq4-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                <div style="padding: 0 20px 20px 20px; color: var(--text-light); line-height: 1.8;">
+                  Yes! I offer various support options:<br><br>
+                  • <strong>Documentation:</strong> Comprehensive technical and operational documentation<br>
+                  • <strong>Knowledge Transfer:</strong> Training sessions for your team<br>
+                  • <strong>Maintenance:</strong> Ongoing support and maintenance packages<br>
+                  • <strong>Monitoring:</strong> Setup of alerts and monitoring dashboards<br>
+                  • <strong>Optimization:</strong> Periodic performance reviews and improvements
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="about-card mb-3">
+              <div class="faq-header" style="cursor: pointer; padding: 20px;" onclick="toggleFaq('faq5')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h5 style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-lock" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    How do you ensure data security and compliance?
+                  </h5>
+                  <i class="ti-angle-down" id="faq5-icon" style="color: var(--primary-color); font-size: 1.2rem; transition: transform 0.3s ease;"></i>
+                </div>
+              </div>
+              <div id="faq5-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                <div style="padding: 0 20px 20px 20px; color: var(--text-light); line-height: 1.8;">
+                  Security and compliance are top priorities:<br><br>
+                  • <strong>Encryption:</strong> Data encryption at rest and in transit<br>
+                  • <strong>Access Control:</strong> IAM policies and role-based access control<br>
+                  • <strong>Compliance:</strong> Experience with GDPR, HIPAA, SOC 2 requirements<br>
+                  • <strong>Auditing:</strong> Comprehensive audit logging and monitoring<br>
+                  • <strong>Data Governance:</strong> Implementation of data quality and lineage frameworks<br>
+                  • <strong>Security Reviews:</strong> Regular security assessments and updates
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="about-card mb-3">
+              <div class="faq-header" style="cursor: pointer; padding: 20px;" onclick="toggleFaq('faq6')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h5 style="margin: 0; color: var(--text-dark); font-weight: 600;">
+                    <i class="ti-money" style="color: var(--primary-color); margin-right: 10px;"></i>
+                    What is your pricing model?
+                  </h5>
+                  <i class="ti-angle-down" id="faq6-icon" style="color: var(--primary-color); font-size: 1.2rem; transition: transform 0.3s ease;"></i>
+                </div>
+              </div>
+              <div id="faq6-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                <div style="padding: 0 20px 20px 20px; color: var(--text-light); line-height: 1.8;">
+                  I offer flexible pricing models to suit different needs:<br><br>
+                  • <strong>Project-based:</strong> Fixed price for well-defined projects<br>
+                  • <strong>Hourly:</strong> Hourly rate for consulting and smaller tasks<br>
+                  • <strong>Retainer:</strong> Monthly retainer for ongoing support<br><br>
+                  Contact me to discuss your specific requirements, and I'll provide a detailed proposal with transparent pricing.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Blog & Articles</h2>
+          <p class="section-subtitle">
+            Sharing knowledge and insights about data engineering
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Newsletter Card -->
+          <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px; border-radius: 20px; text-align: center; margin-bottom: 40px; box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);">
+            <i class="ti-email" style="font-size: 3rem; color: white; margin-bottom: 20px;"></i>
+            <h3 style="color: white; margin-bottom: 15px; font-weight: 700;">Subscribe to My Newsletter</h3>
+            <p style="color: rgba(255,255,255,0.9); margin-bottom: 30px; font-size: 1.1rem;">
+              Stay updated with my latest insights on Data Engineering, Cloud, and Big Data
+            </p>
+            <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=6983848189787271168"
+               class="btn-primary-custom"
+               style="background: white; color: var(--primary-color); box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+              <i class="ti-linkedin" style="margin-right: 8px;"></i>Subscribe on LinkedIn
+            </a>
+          </div>
+
+          <!-- Platform Links -->
+          <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://medium.com/@kuldeep27396"
+               style="background: #12100E; color: white; padding: 15px 30px; border-radius: 12px; text-decoration: none; display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+              <i class="ti-pencil-alt"></i>
+              <span>Medium</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kuldeep27396/recent-activity/posts/"
+               style="background: #0077B5; color: white; padding: 15px 30px; border-radius: 12px; text-decoration: none; display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+              <i class="ti-linkedin"></i>
+              <span>LinkedIn Articles</span>
+            </a>
+            <a href="https://www.analyticsvidhya.com/blog/author/kuldeep27396/"
+               style="background: #2962FF; color: white; padding: 15px 30px; border-radius: 12px; text-decoration: none; display: flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+              <i class="ti-stats-up"></i>
+              <span>Analytics Vidhya</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 0;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 style="color: white; font-weight: 700; margin-bottom: 15px; font-size: 2.5rem;">
+            Ready to Transform Your Data Infrastructure?
+          </h2>
+          <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 0;">
+            Let's discuss how I can help you build scalable, efficient data solutions that drive business value.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-right text-center mt-4 mt-lg-0">
+          <a href="#contact" class="btn-primary-custom" style="background: white; color: var(--primary-color); padding: 16px 40px; font-size: 1.1rem;">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Have a project in mind? Let's work together to build something great
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-card">
+            <form action="https://formspree.io/f/mdownbaw" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-12 mb-4">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
+                </div>
+                <div class="col-12 mb-4">
+                  <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn-submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/kuldeep27396" class="social-link" title="LinkedIn">
+          <i class="ti-linkedin"></i>
+        </a>
+        <a href="https://github.com/kuldeep27396" class="social-link" title="GitHub">
+          <i class="ti-github"></i>
+        </a>
+        <a href="https://twitter.com/kuldeep27396" class="social-link" title="Twitter">
+          <i class="ti-twitter"></i>
+        </a>
+        <a href="https://medium.com/@kuldeep27396" class="social-link" title="Medium">
+          <i class="ti-pencil-alt"></i>
+        </a>
+      </div>
+
+      <div class="text-center">
+        <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;">
+          Made with ❤️ in India
+        </p>
+        <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+          © <span id="year"></span> Kuldeep Pal. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <script src="js/script.js"></script>
 
   <script>
-    function updateCopyright() {
-      const currentYear = new Date().getFullYear();
-      document.getElementById('copyright-year').textContent = currentYear;
+    // Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+      } else {
+        navbar.style.boxShadow = '0 1px 3px rgba(0,0,0,0.05)';
+      }
+    });
+
+    // Active nav link on scroll
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section[id]');
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // FAQ toggle functionality
+    function toggleFaq(faqId) {
+      const content = document.getElementById(faqId + '-content');
+      const icon = document.getElementById(faqId + '-icon');
+
+      if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        content.style.maxHeight = '0';
+        icon.style.transform = 'rotate(0deg)';
+      }
     }
-    updateCopyright();
   </script>
-</footer>
-<!-- /footer -->
-
-
-
-
-
-
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
-
-<!-- Main Script -->
-<script src="js/script.js"></script>
-
 </body>
 </html>
